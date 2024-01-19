@@ -8,7 +8,7 @@ export const metadata = {
 };
 const BlogPage = () => {
   return (
-    <div className='max-w-screen-xl mx-auto px-2 '>
+    <div className='max-w-screen-xl mx-auto px-2'>
         <div className="hero max-h-[600px] mb-8 rounded-lg" style={{backgroundImage: 'url(https://i.postimg.cc/pXkNhjQg/image.png)'}}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">

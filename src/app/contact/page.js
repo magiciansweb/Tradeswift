@@ -7,8 +7,21 @@ export const metadata = {
 };
 const ContactPage = () => {
   return (
-    <div className='max-w-screen-xl mx-auto px-2'>
-      <h1 className='text-4xl font-extrabold text-center my-24'>Contact Us</h1>
+    <div className="max-w-screen-xl mx-auto px-2">
+      <div
+        className="hero max-h-[600px] mb-8 rounded-lg"
+        style={{
+          backgroundImage: "url(https://i.postimg.cc/pXkNhjQg/image.png)",
+        }}
+      >
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md px-20 py-40">
+            <h1 className="mb-5 text-5xl font-bold">Contact Us</h1>
+          </div>
+        </div>
+      </div>
+
       <ContactUs></ContactUs>
     </div>
   );
