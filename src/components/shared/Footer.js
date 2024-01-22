@@ -1,41 +1,60 @@
-"use client"
+import Image from "next/image";
+
 const Footer = () => {
-    return (
-        <footer className="footer max-w-screen-xl  mt-10 p-10 bg-base-200 text-base-content">
-        <nav>
-          <header className="footer-title">Services</header> 
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
-        </nav> 
-        <nav>
-          <header className="footer-title">Company</header> 
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
-        </nav> 
-        <nav>
-          <header className="footer-title">Legal</header> 
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
-        </nav> 
-        <form>
-          <header className="footer-title">Newsletter</header> 
-          <fieldset className="form-control w-80">
-            <label className="label">
-              <span className="label-text">Enter your email address</span>
-            </label> 
-            <div className="join">
-              <input type="text" placeholder="username@site.com" className="input input-bordered join-item" /> 
-              <button className="btn btn-primary join-item">Subscribe</button>
+  const currentYear = new Date().getFullYear()
+  return (
+    <div className="bg-[#00150F] text-[#969F9C]">
+      <div className="container mx-auto px-4">
+        <div className="py-16 flex gap-8 flex-col md:flex-row">
+          <div className="flex-1">
+            <div className="flex items-center gap-2">
+              <Image
+                className="md:w-[50px] md:h-[50px] w-[30px] h-[30px]"
+                src="https://i.ibb.co/bBLXjNK/bar-chart-1060710.png"
+                alt="logo"
+                width={50}
+                height={50}
+              />
+              <p className="text-4xl text-white font-semibold "> TradeSwift </p>
             </div>
-          </fieldset>
-        </form>
-      </footer>
-    );
+            <p className="mt-3 text-lg text-justify max-w-sm">Welcome to our trading site! We offer the best, most affordable products and services around. Shop now and start finding great deals!</p>
+          </div>
+          <div className="flex-1 grid grid-cols-2 md:grid-cols-3">
+            <div>
+              <h3 className="text-2xl font-bold text-white">Quick Links</h3>
+              <ul className="mt-5 text-xl font-medium space-y-1">
+                <li className="cursor-pointer">About Us</li>
+                <li className="cursor-pointer">Teams</li>
+                <li className="cursor-pointer">Services</li>
+                <li className="cursor-pointer">Features</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white">Support</h3>
+              <ul className="mt-5 text-xl font-medium space-y-1">
+                <li className="cursor-pointer">Terms & Conditions</li>
+                <li className="cursor-pointer">Privacy Policy</li>
+                <li className="cursor-pointer">FAQs</li>
+                <li className="cursor-pointer">Support Center</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white">Company</h3>
+              <ul className="mt-5 text-xl font-medium space-y-1">
+                <li className="cursor-pointer">Careers</li>
+                <li className="cursor-pointer">Updates</li>
+                <li className="cursor-pointer">Jobs</li>
+                <li className="cursor-pointer">Announce</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+        <div className="divider"></div> 
+        <p className="text-center text-lg pb-6">© {currentYear} All Rights Reserved By Tradeswift</p>
+      </div>
+    </div>
+  );
 };
 
 export default Footer;

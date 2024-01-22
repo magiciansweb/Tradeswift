@@ -6,14 +6,14 @@ import Image from 'next/image';
 
 const SingUpPage = () => {
     return (
-        <div className="container mx-auto min-h-screen px-5 my-5 flex items-center justify-center lg:flex-row flex-col gap-8">
+        <div className="container mx-auto min-h-[calc(100vh-40px)] text-white px-5 my-5 flex items-center justify-center lg:flex-row flex-col gap-8">
         <div className="">
           <h1 className="text-5xl font-semibold ">
-            Trading With In <br />TRADESWIFT
+            Trading With <br />TRADESWIFT
           </h1>
           <Image src={banner} alt="banner" width={350} height={350} />
         </div>
-        <div style={{boxShadow: "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px"}}  className="flex-1 max-w-sm px-7 py-6 rounded-lg">
+        <div style={{boxShadow: "rgba(17, 17, 26, 0.5) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px"}}  className="flex-1 bg-[#081D17] max-w-sm px-7 py-6 rounded-lg">
           <h1 className="text-3xl font-bold mb-5">Sign Up Now!</h1>
           <form>
             <label className="font-bold " htmlFor="email">
@@ -24,7 +24,7 @@ const SingUpPage = () => {
               type="text"
               required
               name="name"
-              className="py-1.5 px-3 mb-3 mt-1 w-full rounded-sm border-2 border-black"
+              className="py-2 px-3 mb-3 mt-1 w-full rounded-sm border-1 bg-[#1B2D29] border-gray-500"
               placeholder="Enter Your Name"
             />
             <label className="font-bold " htmlFor="email">
@@ -35,7 +35,7 @@ const SingUpPage = () => {
               type="email"
               required
               name="email"
-              className="py-1.5 px-3 mb-3 mt-1 w-full rounded-sm border-2 border-black"
+              className="py-2 px-3 mb-3 mt-1 w-full rounded-sm border-1 bg-[#1B2D29] border-gray-500"
               placeholder="Enter email here..."
             />
             <label className="font-bold " htmlFor="email">
@@ -46,13 +46,13 @@ const SingUpPage = () => {
               type="password"
               name="password"
               required
-              className="py-1.5 px-3 mt-1 w-full rounded-sm border-2 border-black"
+              className="py-2 px-3 mb-3 mt-1 w-full rounded-sm border-1 bg-[#1B2D29] border-gray-500"
               placeholder="Enter Password here..."
             />
-            <input
+           <input
               type="submit"
-              value="Sign Up"
-              className="w-full py-2.5 rounded bg-[#344563] font-medium mt-5 text-white cursor-pointer text-base"
+              value="Sign In"
+              className="w-full py-3 rounded bg-[#00d068] font-medium mt-5 text-black cursor-pointer text-lg"
             />
           </form>
           <div className="divider">OR</div>
