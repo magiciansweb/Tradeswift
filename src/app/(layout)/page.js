@@ -1,4 +1,5 @@
 import Bannerbottom from "@/components/Bannerbottom";
+import Easytouse from "@/components/Easytouse/page";
 import Footertop from "@/components/Footertop";
 import Getstarted from "@/components/Getstarted";
 import Banner from "@/components/Home/Banner/Banner";
@@ -14,6 +15,7 @@ const HomePage = () => {
     <Whyinvest></Whyinvest>
    <Clients></Clients>
    <Getstarted></Getstarted>
+   <Easytouse></Easytouse>
     <Footertop></Footertop>
   </div>;
 };

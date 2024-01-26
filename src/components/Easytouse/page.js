@@ -9,7 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const easyToUsePage = () => {
+const Easytouse = () => {
   return (
     <div className="bg-[#161A25] min-h-screen pb-4">
       <h1 className="text-white text-5xl font-bold text-center pt-28">
@@ -78,4 +78,4 @@ const easyToUsePage = () => {
   );
 };
 
-export default easyToUsePage;
+export default Easytouse;
