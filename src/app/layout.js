@@ -1,8 +1,7 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
-
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
+import AuthProvider from "@/Provider/AuthProvider";
+import { Toaster } from "react-hot-toast";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -20,7 +19,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme={"night"}>
       <body className={`${roboto.className}`}>
-        {children}
+      <Toaster></Toaster>
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );

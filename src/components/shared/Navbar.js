@@ -1,9 +1,20 @@
 "use client";
 
+import { AuthContext } from "@/Provider/AuthProvider";
 import Image from "next/image";
 import Link from "next/link";
+import { useContext } from "react";
+import { toast } from "react-hot-toast";
 
 const Navbar = () => {
+  const {user,logout} = useContext(AuthContext);
+  console.log(user);
+  const handleLogout = () => {
+    logout()
+    .then(()=>{
+      toast.success("Sign Out sucessfully");
+    })
+  }
   const navItems = (
     <>
       <Link
@@ -86,9 +97,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link href='signin' >
-            <button className="bg-[#00D094] text-black font-semibold px-5 py-3 rounded-md">Join Now</button>
-          </Link>
+        {user === null ?  <Link href='signin' >
+          <button className="bg-[#00D094] text-black font-semibold px-5 py-3 rounded-md">Join Now</button>
+        </Link> : <button onClick={handleLogout} className="bg-[#00D094] text-black font-semibold px-5 py-3 rounded-md">Sign Out</button>}
         </div>
       </div>
     </div>

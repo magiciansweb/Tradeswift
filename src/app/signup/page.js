@@ -1,10 +1,36 @@
+"use client"
+
 import Link from 'next/link';
 import {FcGoogle} from 'react-icons/fc'
 import banner from '@/assets/9520.jpg'
 import Image from 'next/image';
+import { useContext } from 'react';
+import { AuthContext } from '@/Provider/AuthProvider';
+import { toast } from 'react-hot-toast';
+import { useRouter } from 'next/navigation';
 
 
 const SingUpPage = () => {
+  const {signup} = useContext(AuthContext);
+  const router = useRouter()
+
+  const handleSignup = event => {
+    event.preventDefault()
+    const form = event.target;
+    const name = form.name.value
+    const email = form.email.value;
+    const password = form.password.value;
+
+    signup(email,password)
+    .then(()=>{
+        toast.success("Sign Up sucessfully");
+        router.push('/')
+    })
+    .catch(err=>{
+      toast.error(err.message)
+    })
+  }
+
     return (
         <div className="container mx-auto min-h-[calc(100vh-40px)] text-white px-5 my-5 flex items-center justify-center lg:flex-row flex-col gap-8">
         <div className="">
@@ -15,7 +41,7 @@ const SingUpPage = () => {
         </div>
         <div style={{boxShadow: "rgba(17, 17, 26, 0.5) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px"}}  className="flex-1 bg-[#081D17] max-w-sm px-7 py-6 rounded-lg">
           <h1 className="text-3xl font-bold mb-5">Sign Up Now!</h1>
-          <form>
+          <form onSubmit={handleSignup}>
             <label className="font-bold " htmlFor="email">
               Your Name
             </label>{" "}
