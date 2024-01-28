@@ -1,4 +1,5 @@
 import { PiCaretDoubleLeftBold } from "react-icons/pi";
+import Image from 'next/image';
 
 const clients = () => {
     return (
@@ -17,7 +18,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Senturk Yasar</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
   </div>
  
 </div>
@@ -32,7 +33,8 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Shuvo</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+    
   </div>
  
 </div>
@@ -47,7 +49,8 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Jewel</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+   
   </div>
  
 </div>
@@ -66,7 +69,8 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Ahmed Bhramik</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+   
   </div>
  
 </div>
@@ -81,7 +85,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Ricci</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
   </div>
  
 </div>
@@ -96,7 +100,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>MUMUCHU</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
   </div>
  
 </div>
@@ -113,7 +117,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Senturk Yasar</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
   </div>
  
 </div>
@@ -128,7 +132,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Shuvo</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
   </div>
  
 </div>
@@ -143,7 +147,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Jewel</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
   </div>
  
 </div>
@@ -160,7 +164,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Senturk Yasar</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
   </div>
  
 </div>
@@ -175,7 +179,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Shuvo</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
   </div>
  
 </div>
@@ -190,7 +194,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Jewel</h2>
   <div className="w-15 rounded-full">
-    <img src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
   </div>
  
 </div>

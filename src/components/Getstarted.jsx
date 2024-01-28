@@ -2,9 +2,9 @@ import React from 'react';
 
 const Getstarted = () => {
     return (
-        <div className=' '>
+        <div >
             <div className='container mx-auto   py-10'>
-            <h2 className='text-3xl font-bold text-center  py-10'>It's simple to get started</h2>
+            <h2 className='text-3xl font-bold text-center  py-10'>It is simple to get started</h2>
              <div className='grid grid-cols-1 lg:grid-cols-3'>
                 <div>
                 <div className="divider text-5xl font-bold pb-3 ">1</div>
