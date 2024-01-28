@@ -5,7 +5,7 @@ import { GiNetworkBars } from "react-icons/gi";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 const Footertop = () => {
     return (
-        <div className='py-10 bg-emerald-900'>
+        <div className='py-10 '>
            <div className='container mx-auto flex lg:flex-row text-white  flex-col gap-20'>
             <div className='flex'>
                 <div className='px-10'>

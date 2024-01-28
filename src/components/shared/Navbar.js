@@ -26,18 +26,6 @@ const Navbar = () => {
 
       <Link
         className="text-white mx-3 font-bold hover:underline"
-        href="/faq"
-      >
-        FAQ
-      </Link>
-      <Link
-        className="text-white mx-3 font-bold hover:underline"
-        href="/services"
-      >
-        Services
-      </Link>
-      <Link
-        className="text-white mx-3 font-bold hover:underline"
         href="/about"
       >
         About

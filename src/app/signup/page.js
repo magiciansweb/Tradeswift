@@ -8,12 +8,12 @@ import { useContext } from 'react';
 import { AuthContext } from '@/Provider/AuthProvider';
 import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
-
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const SingUpPage = () => {
   const {signup} = useContext(AuthContext);
   const router = useRouter()
-
+  const provider = new GoogleAuthProvider();
   const handleSignup = event => {
     event.preventDefault()
     const form = event.target;
@@ -30,7 +30,13 @@ const SingUpPage = () => {
       toast.error(err.message)
     })
   }
-
+  const handleGoogle=()=>{
+    signInWithPopup(auth,provider)
+   .then(res=>{console.log(res.user);
+     router.push('/')
+   })
+   .catch(err=>console.log(err.messages))
+ }
     return (
         <div className="container mx-auto min-h-[calc(100vh-40px)] text-white px-5 my-5 flex items-center justify-center lg:flex-row flex-col gap-8">
         <div className="">
@@ -82,7 +88,7 @@ const SingUpPage = () => {
             />
           </form>
           <div className="divider">OR</div>
-          <button className='w-full bg-[f5f7fc] py-2.5 rounded-md border-2 flex items-center justify-center gap-2 font-medium border-black'><span className='text-2xl'><FcGoogle/></span><span>Continue with Google</span></button>
+          <button onClick={handleGoogle} className='w-full bg-[f5f7fc] py-2.5 rounded-md border-2 flex items-center justify-center gap-2 font-medium border-black'><span className='text-2xl'><FcGoogle/></span><span>Continue with Google</span></button>
           <p className="font-bold mt-1">
             Already have an Account?
             <Link href="/signin" className="text-blue-600">

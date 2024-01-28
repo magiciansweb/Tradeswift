@@ -2,7 +2,7 @@ import { FaRegCheckCircle } from "react-icons/fa";
 
 const Bannerbottom = () => {
     return (
-        <div className="bg-[#664242] text-white pt-2 pb-10">
+        <div className=" text-white pt-2 pb-10">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10  ">
                 <div className="pr-10">
                     <FaRegCheckCircle className="text-xl bg-green-800 rounded-full"></FaRegCheckCircle>
