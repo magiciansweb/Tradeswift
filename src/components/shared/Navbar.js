@@ -1,5 +1,6 @@
 "use client";
 
+import useAdmin from "@/Hooks/useAdmin";
 import { AuthContext } from "@/Provider/AuthProvider";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +9,8 @@ import { toast } from "react-hot-toast";
 
 const Navbar = () => {
   const {user,logout} = useContext(AuthContext);
-  console.log(user);
+  const [userInfo] = useAdmin()
+  console.log(userInfo);
   const handleLogout = () => {
     logout()
     .then(()=>{
@@ -43,6 +45,22 @@ const Navbar = () => {
       >
         Contact
       </Link>
+      {
+        userInfo.role === "admin" && <Link
+        className="text-white mx-3 font-bold hover:underline"
+        href="/dashboard"
+      >
+        Dashboard
+      </Link>
+      }
+      {
+        userInfo.role === "user" && <Link
+        className="text-white mx-3 font-bold hover:underline"
+        href="/userdashboard"
+      >
+        Dashboard
+      </Link>
+      }
     </>
   );
 

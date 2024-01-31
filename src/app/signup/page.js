@@ -9,11 +9,14 @@ import { AuthContext } from '@/Provider/AuthProvider';
 import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import useAxios from '@/Hooks/useAxios';
 
 const SingUpPage = () => {
   const {signup} = useContext(AuthContext);
   const router = useRouter()
   const provider = new GoogleAuthProvider();
+  const axios = useAxios()
+
   const handleSignup = event => {
     event.preventDefault()
     const form = event.target;
@@ -21,10 +24,19 @@ const SingUpPage = () => {
     const email = form.email.value;
     const password = form.password.value;
 
+    const userInfo = {
+      name:name,
+      email,email,
+      role:'user'
+    }
+
     signup(email,password)
     .then(()=>{
         toast.success("Sign Up sucessfully");
-        router.push('/')
+        axios.post('/users',userInfo)
+        .then(()=>{
+          router.push('/')
+        })
     })
     .catch(err=>{
       toast.error(err.message)
