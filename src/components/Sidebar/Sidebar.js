@@ -1,14 +1,13 @@
 "use client"
 import UseAdmins from "@/Hooks/UseAdmins";
+import { AuthContext } from "@/Provider/AuthProvider";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useContext } from "react";
 import { IoMenu } from "react-icons/io5";
 
 const Sidebar = () => {
-  const [userInfo] = UseAdmins()
-  const pathName = usePathname()
+  const [userInfo] = UseAdmins();
   const {logout}=useContext(AuthContext);
   const handleLogout = () => {
     logout()
