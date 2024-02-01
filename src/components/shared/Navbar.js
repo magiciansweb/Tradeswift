@@ -1,6 +1,7 @@
 "use client";
 
-import useAdmin from "@/Hooks/useAdmin";
+
+import UseAdmin from "@/Hooks/useAdmin";
 import { AuthContext } from "@/Provider/AuthProvider";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +10,7 @@ import { toast } from "react-hot-toast";
 
 const Navbar = () => {
   const {user,logout} = useContext(AuthContext);
-  const [userInfo] = useAdmin()
+  const [userInfo] = UseAdmin()
   console.log(userInfo);
   const handleLogout = () => {
     logout()

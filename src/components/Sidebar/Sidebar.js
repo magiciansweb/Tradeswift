@@ -1,6 +1,6 @@
 "use client"
 
-import useAdmin from "@/Hooks/useAdmin";
+import useAdmin from "@/Hooks/UseAdmin";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

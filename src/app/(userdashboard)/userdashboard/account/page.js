@@ -1,12 +1,14 @@
 "use client";
 
 
-import useAdmin from "@/Hooks/useAdmin";
+
+
+import UseAdmin from "@/Hooks/useAdmin";
 import countryList from "react-select-country-list";
 
 
 const page = () => {
-  const [userInfo] = useAdmin;
+  const [userInfo] = UseAdmin();
   const country = countryList()
 
   return (

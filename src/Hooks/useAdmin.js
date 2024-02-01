@@ -5,7 +5,7 @@ import useAuth from "./useAuth";
 import useAxios from "./useAxios";
 
 
-const useAdmin = () => {
+const UseAdmin = () => {
     const [userInfo,setUserInfo] = useState([])
     const {user} = useAuth();
     const axios = useAxios();
@@ -18,4 +18,4 @@ const useAdmin = () => {
     return [userInfo]
 };
 
-export default useAdmin;
+export default UseAdmin;
