@@ -1,11 +1,9 @@
 "use client"
+import React, { useEffect, useState } from 'react';
+import useAxios from './useAxios';
+import useAuth from './useAuth';
 
-import { useEffect, useState } from "react";
-import useAuth from "./useAuth";
-import useAxios from "./useAxios";
-
-
-const UseAdmin = () => {
+const UseAdmins = () => {
     const [userInfo,setUserInfo] = useState([])
     const {user} = useAuth();
     const axios = useAxios();
@@ -16,6 +14,6 @@ const UseAdmin = () => {
         })
     },[axios, user?.email])
     return [userInfo]
-};
+}
 
-export default UseAdmin;
+export default UseAdmins;
