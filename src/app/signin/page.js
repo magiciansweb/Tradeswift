@@ -9,7 +9,8 @@ import { AuthContext } from '@/Provider/AuthProvider';
 import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import auth from '@/Firebase/Firebase.config';
+import auth from '@/Provider/firebase.config';
+
 
 // change
 const SinginPage = () => {

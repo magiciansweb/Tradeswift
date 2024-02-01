@@ -10,6 +10,8 @@ import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import useAxios from '@/Hooks/useAxios';
+import auth from '@/Provider/firebase.config';
+
 
 const SingUpPage = () => {
   const {signup} = useContext(AuthContext);
