@@ -1,22 +1,21 @@
 "use client"
 import UseAdmins from "@/Hooks/UseAdmins";
-import { AuthContext } from "@/Provider/AuthProvider";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useContext } from "react";
+import React from "react";
 import { IoMenu } from "react-icons/io5";
 
 const Sidebar = () => {
-  const {user,logout}=useContext(AuthContext);
   const [userInfo] = UseAdmins()
   const pathName = usePathname()
+  const {logout}=useContext(AuthContext);
   const handleLogout = () => {
-      logout()
-      .then(()=>{
-        toast.success("Sign Out sucessfully");
-      })
-    }
+    logout()
+    .then(()=>{
+      toast.success("Sign Out sucessfully");
+    })
+  }
   return (
     <div className="drawer text-white lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -50,14 +49,14 @@ const Sidebar = () => {
         </ul>
         }
        {
-        user && <ul className="menu space-y-1 bg-[#0b1325] py-4 px-2 w-64 min-h-full text-white">
-        <Link href="/userdashboard" className={pathName.endsWith("userdashboard") ? "px-3 bg-slate-700 py-2" : "py-2 px-3 hover:bg-slate-700"}>
+        userInfo.role === 'user' && <ul className="menu space-y-1 bg-[#0b1325] py-4 px-2 w-64 min-h-full text-white">
+        <Link href="/userdashboard" className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>
           Dashboard
         </Link>
-        <Link href="/userdashboard/account" className={pathName.endsWith("userdashboard/account") ? "px-3 bg-slate-700 py-2" : "py-2 px-3 hover:bg-slate-700"}>
+        <Link href="/userdashboard/account" className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>
           Account
         </Link>
-        <Link><button onClick={handleLogout}>Sign out</button></Link>
+        <Link><button className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"} onClick={handleLogout}>Sign out</button></Link>
       </ul>
        }
       </div>
