@@ -1,13 +1,15 @@
+import Link from "next/link";
 import { FaPlus } from "react-icons/fa6";
 
 const page = () => {
   return (
     <div className="text-white">
       <div className="flex gap-3">
-        <button className="bg-[#0FAF59] flex items-center gap-1 text-white px-5 py-2 rounded-sm font-medium">
+       <Link href={'/deposite'}>
+       <button className="bg-[#0FAF59] flex items-center gap-1 text-white px-5 py-2 rounded-sm font-medium">
           <FaPlus />
           Deposit
-        </button>
+        </button></Link>
         <button className="bg-[#353A4D] hover:bg-black text-white px-5 py-2 rounded-sm font-medium">
           Withdrawal
         </button>
