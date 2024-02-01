@@ -1,11 +1,11 @@
 import { PiCaretDoubleLeftBold } from "react-icons/pi";
 import Image from 'next/image';
 
-const clients = () => {
+const Clients = () => {
     return (
        <div className=" bg-[#083a2d] text-white">
         <div className="container mx-auto">
-        <div><h2 className="text-3xl py-10 text-center font-bold">Whats our clients say?</h2></div>
+        <div><h2 className="text-3xl py-10 text-center font-bold">Whats our Clients say?</h2></div>
          <div className="carousel w-full ">
   <div id="item1" className="carousel-item flex-col lg:flex-row items-center space-y-2 flex w-full gap-10">
   <div className="card h-[300px] w-[400px] rounded-none shadow-2xl p-4">
@@ -212,4 +212,4 @@ const clients = () => {
     );
 };
 
-export default clients;
+export default Clients;
