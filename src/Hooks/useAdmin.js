@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 import useAuth from "./useAuth";
 import useAxios from "./useAxios";
 
+
 const useAdmin = () => {
     const [userInfo,setUserInfo] = useState([])
-    const {user} = useAuth()
-    const axios = useAxios()
+    const {user} = useAuth();
+    const axios = useAxios();
     useEffect(()=>{
         axios.get(`/users/${user?.email}`)
         .then(res=>{
