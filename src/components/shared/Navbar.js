@@ -47,12 +47,9 @@ const Navbar = () => {
       >
         Contact
       </Link>
-      <Link
-        className="text-white mx-3 font-bold hover:underline"
-        
-      >
+     
        <button onClick={handleLogout}>Signout</button> 
-      </Link>
+      
       {
         userInfo.role === "admin" && <Link
         className="text-white mx-3 font-bold hover:underline"
