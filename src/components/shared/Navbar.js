@@ -61,14 +61,14 @@ const Navbar = () => {
         Dashboard
       </Link>
       }
-      {/* {
+      {
         userInfo.role === "user" && <Link
         className="text-white mx-3 font-bold hover:underline"
         href="/userdashboard"
       >
         Dashboard
       </Link>
-      } */}
+      }
     </>
   );
 

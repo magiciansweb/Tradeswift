@@ -3,7 +3,7 @@ import UseAdmins from "@/Hooks/UseAdmins";
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useContext } from "react";
+
 import { IoMenu } from "react-icons/io5";
 
 const Sidebar = () => {
