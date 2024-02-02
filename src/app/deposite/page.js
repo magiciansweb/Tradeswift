@@ -11,7 +11,7 @@ const Transection = () => {
         formState: { errors },
       } = useForm()
       const onSubmit = (data) => {console.log(data)
-      fetch('http://localhost:5000/deposit',{
+      fetch('https://tradeswift-server.vercel.app/deposit',{
         method:"POST",
         headers:{'content-type':'application/json'},
         body:JSON.stringify(data)

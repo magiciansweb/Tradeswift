@@ -10,6 +10,7 @@ import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import auth from '@/Provider/firebase.config';
+import axios from 'axios';
 
 
 // change
@@ -22,7 +23,6 @@ const SinginPage = () => {
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-
     signin(email,password)
     .then(()=>{
       toast.success("Sign in sucessfully");
@@ -35,7 +35,12 @@ const SinginPage = () => {
 const handleGoogle=()=>{
    signInWithPopup(auth,provider)
   .then(res=>{console.log(res.user);
-    router.push('/')
+    const userInfo=res.user;
+    toast.success("Sign Up sucessfully");
+        axios.post('/users',userInfo)
+        .then(()=>{
+          router.push('/')
+        })
   })
   .catch(err=>console.log(err.messages))
 }

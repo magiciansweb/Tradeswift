@@ -47,7 +47,12 @@ const SingUpPage = () => {
   const handleGoogle=()=>{
     signInWithPopup(auth,provider)
    .then(res=>{console.log(res.user);
-     router.push('/')
+    const userInfo=res.user
+    toast.success("Sign Up sucessfully");
+    axios.post('/users',userInfo)
+    .then(()=>{
+      router.push('/')
+    })
    })
    .catch(err=>console.log(err.messages))
  }
