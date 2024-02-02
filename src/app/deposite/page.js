@@ -30,9 +30,9 @@ const Transection = () => {
       .then(result=>{
         console.log(result)
 
-        // window.location.replace(result.url)
+        window.location.replace(result.url)
       })
-      .catch(error => console.error('Fetch error:', error))
+      
       }
         
  

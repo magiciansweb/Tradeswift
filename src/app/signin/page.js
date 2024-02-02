@@ -37,7 +37,7 @@ const handleGoogle=()=>{
   .then(res=>{console.log(res.user);
     const userInfo=res.user;
     toast.success("Sign Up sucessfully");
-        axios.post('/users',userInfo)
+        axios.post('/user',userInfo)
         .then(()=>{
           router.push('/')
         })

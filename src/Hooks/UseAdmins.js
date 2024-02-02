@@ -8,7 +8,7 @@ const UseAdmins = () => {
     const {user} = useAuth();
     const axios = useAxios();
     useEffect(()=>{
-        axios.get(`/users/${user?.email}`)
+        axios.get(`/user/${user?.email}`)
         .then(res=>{
             setUserInfo(res.data)
         })
