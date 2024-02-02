@@ -8,10 +8,10 @@ const layout = ({children}) => {
             
   <div className="flex flex-col max-w-34 bg-base-300">
    
-      
+  <a className="btn btn-ghost text-xl">Tradeswift dashboard</a>
       <Link href={'/userdashboard/account'}><button className="btn btn-ghost text-xl">Account</button></Link>
     
-    <a className="btn btn-ghost text-xl">Tradeswift dashboard</a>
+   
  
   
   
