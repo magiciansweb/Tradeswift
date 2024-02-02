@@ -13,23 +13,14 @@ const Transection = () => {
       const onSubmit = (data) => {
         console.log(data)
       fetch('https://tradeswift-server.vercel.app/deposit',{
-        mode: 'no-cors',
         method:"POST",
         headers:{'content-type':'application/json'},
         body:JSON.stringify(data)
       })
-      .then( response=>{
-        if (!response.ok) {
-          console.log('Response status:', response.status)
-      }
-      else{
-        return response.json();
-      }
-      
-    })
+      .then(res=>res.json())
+      // .then( response=>response.json())
       .then(result=>{
         console.log(result)
-
         window.location.replace(result.url)
       })
       
