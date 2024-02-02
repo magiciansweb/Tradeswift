@@ -6,7 +6,7 @@ import Link from "next/link";
 const layout = ({children}) => {
     return (
         <div className="flex flex-col my-10  lg:flex-row container mx-auto">
-           <div className="flex flex-col">
+           <div className="">
            <a className="btn btn-ghost text-xl">Tradeswift dashboard</a>
       
    <Link href={'/userdashboard/account'}>Account</Link>
