@@ -12,6 +12,7 @@ const Transection = () => {
       } = useForm()
       const onSubmit = (data) => {console.log(data)
       fetch('https://tradeswift-server.vercel.app/deposit',{
+        mode: 'no-cors',
         method:"POST",
         headers:{'content-type':'application/json'},
         body:JSON.stringify(data)
