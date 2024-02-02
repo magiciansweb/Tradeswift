@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const layout = ({children}) => {
     return (
-        <div className="flex flex-col lg:flex-row container mx-auto">
+        <div className="flex flex-col gap-10 lg:flex-row container mx-auto">
             
-  <div className="flex flex-col max-w-20">
+  <div className="flex flex-col max-w-34">
    
       
       <Link href={'/userdashboard/account'}>Account</Link>
