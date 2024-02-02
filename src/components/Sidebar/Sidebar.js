@@ -65,7 +65,7 @@ const Sidebar = () => {
         <Link href="/userdashboard/account" className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>
           Account
         </Link>
-        <Link><button className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"} onClick={handleLogout}>Sign out</button></Link>
+        <Link><button className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>Sign out</button></Link>
       </ul>
        }
       </div>
