@@ -10,18 +10,25 @@ const Transection = () => {
         watch,
         formState: { errors },
       } = useForm()
-      const onSubmit = (data) => {console.log(data)
+      const onSubmit = (data) => {
+        console.log(data)
       fetch('https://tradeswift-server.vercel.app/deposit',{
         mode: 'no-cors',
         method:"POST",
         headers:{'content-type':'application/json'},
         body:JSON.stringify(data)
       })
-      .then(res=>res.json())
-      .then(err=>{
-        console.log(err)
-        window.location.replace(err.url)
+      .then( response=>{
+        if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+      .then(result=>{
+        console.log(result)
+        window.location.replace(result.url)
       })
+      .catch(error => console.error('Fetch error:', error))
       }
         
  
