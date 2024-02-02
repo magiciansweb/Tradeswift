@@ -20,7 +20,7 @@ const Transection = () => {
       })
       .then( response=>{
         if (!response.ok) {
-          return res.text().then(text => { throw new Error(text) })
+          console.log('Response status:', response.status)
       }
       else{
         return response.json();
