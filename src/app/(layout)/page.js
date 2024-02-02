@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import Foundation from "@/components/Foundation/Foundation";
+>>>>>>> origin/stage-02
 import Bannerbottom from "@/components/Bannerbottom";
 import Easytouse from "@/components/Easytouse/page";
 import Footertop from "@/components/Footertop";
@@ -14,6 +18,7 @@ const HomePage = () => {
     <Banner/>
     <Bannerbottom></Bannerbottom>
     <Whyinvest></Whyinvest>
+    <Foundation></Foundation>
    <Clients></Clients>
    <Getstarted></Getstarted>
    <Easytouse></Easytouse>

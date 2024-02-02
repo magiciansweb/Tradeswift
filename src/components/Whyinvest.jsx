@@ -6,7 +6,7 @@ const Whyinvest = () => {
     return (
         <div className=" bg-green-950">
             <div className="container text-white mx-auto">
-            <h2 className="text-3xl text-center font-bold py-10">Why invest with IQ options?</h2>
+            <h2 className="text-3xl text-center font-bold py-10">Why invest with TradeSwift?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
                 <div className=" text-start p-4">
                     <TfiCup className=" text-green-500 text-4xl"></TfiCup>
