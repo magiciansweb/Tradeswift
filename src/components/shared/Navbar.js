@@ -10,10 +10,15 @@ import { useContext } from "react";
 import { toast } from "react-hot-toast";
 
 const Navbar = () => {
-  const {user} = useContext(AuthContext);
+  const {user,logout} = useContext(AuthContext);
   const [userInfo] = UseAdmins()
   console.log(userInfo);
-  
+  const handleLogout = () => {
+    logout()
+    .then(()=>{
+      toast.success("Sign Out sucessfully");
+    })
+  }
   const navItems = (
     <>
       <Link
@@ -41,6 +46,12 @@ const Navbar = () => {
         href="/contact"
       >
         Contact
+      </Link>
+      <Link
+        className="text-white mx-3 font-bold hover:underline"
+        
+      >
+       <button onClick={handleLogout}>Signout</button> 
       </Link>
       {
         userInfo.role === "admin" && <Link

@@ -1,6 +1,6 @@
 "use client"
 import UseAdmins from "@/Hooks/UseAdmins";
-import { AuthContext } from "@/Provider/AuthProvider";
+
 import Image from "next/image";
 import Link from "next/link";
 import React, { useContext } from "react";
@@ -8,13 +8,8 @@ import { IoMenu } from "react-icons/io5";
 
 const Sidebar = () => {
   const [userInfo] = UseAdmins();
-  const {logout}=useContext(AuthContext);
-  const handleLogout = () => {
-    logout()
-    .then(()=>{
-      toast.success("Sign Out sucessfully");
-    })
-  }
+  
+  
   return (
     <div className="drawer text-white lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
