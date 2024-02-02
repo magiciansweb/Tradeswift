@@ -18,12 +18,10 @@ const Transection = () => {
         body:JSON.stringify(data)
       })
       .then(res=>res.json())
-      .then(result=>{
-        console.log(result);
-        window.location.replace(result.url)
+      .then(err=>{
+        console.log(err)
+        window.location.replace(err.url)
       })
-      
-      
       }
         
  
