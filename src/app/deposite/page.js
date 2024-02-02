@@ -28,7 +28,8 @@ const Transection = () => {
       
     })
       .then(result=>{
-        console.log(result)
+        console.log(result.url)
+
         window.location.replace(result.url)
       })
       .catch(error => console.error('Fetch error:', error))
