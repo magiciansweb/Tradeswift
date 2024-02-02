@@ -32,7 +32,7 @@ const page = () => {
             </div>
         </div>
         <div className="flex-1">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis pariatur omnis dolor possimus, quam necessitatibus tempore voluptate sunt qui aut.
+            
         </div>
       </div>
     </div>
