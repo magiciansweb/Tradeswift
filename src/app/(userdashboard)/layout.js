@@ -6,7 +6,7 @@ const layout = ({children}) => {
     return (
         <div className="flex flex-col my-10 gap-10 lg:flex-row container mx-auto">
             
-  <div className="flex flex-col max-w-34">
+  <div className="flex flex-col max-w-34 bg-base-300">
    
       
       <Link href={'/userdashboard/account'}><button className="btn btn-ghost text-xl">Account</button></Link>
