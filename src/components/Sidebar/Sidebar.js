@@ -1,12 +1,15 @@
 "use client"
 import UseAdmins from "@/Hooks/UseAdmins";
+import { AuthContext } from "@/Provider/AuthProvider";
 
 import Image from "next/image";
 import Link from "next/link";
+import { useContext } from "react";
 
 import { IoMenu } from "react-icons/io5";
 
 const Sidebar = () => {
+  const {user} = useContext(AuthContext);
   const [userInfo] = UseAdmins();
   
   
@@ -44,6 +47,18 @@ const Sidebar = () => {
         }
        {
         userInfo.role === 'user' && <ul className="menu space-y-1 bg-[#0b1325] py-4 px-2 w-64 min-h-full text-white">
+        <Link href="/userdashboard" className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>
+          Dashboard
+        </Link>
+        <Link href="/userdashboard/account" className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>
+          Account
+        </Link>
+        <Link><button className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"} onClick={handleLogout}>Sign out</button></Link>
+      </ul>
+       }
+
+       {
+        user&&<ul className="menu space-y-1 bg-[#0b1325] py-4 px-2 w-64 min-h-full text-white">
         <Link href="/userdashboard" className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>
           Dashboard
         </Link>
