@@ -59,10 +59,10 @@ const Sidebar = () => {
 
        {
         user && <ul className="menu space-y-1 bg-[#0b1325] py-4 px-2 w-64 min-h-full text-white">
-        <Link href="/userdashboard" className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>
+        <Link  className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>
           Dashboard
         </Link>
-        <Link href="/userdashboard/account" className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>
+        <Link  className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>
           Account
         </Link>
         <Link><button className={"px-3 bg-slate-700 py-2  hover:bg-slate-700"}>Sign out</button></Link>
