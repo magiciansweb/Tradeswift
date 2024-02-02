@@ -5,21 +5,21 @@ import Link from "next/link";
 
 const layout = ({children}) => {
     return (
-        <div className="flex flex-col  lg:flex-row container mx-auto">
-           <div><div className=" flex-1 flex-col">
-   
+        <div className="flex flex-col my-10  lg:flex-row container mx-auto">
+           <div className="flex flex-col">
+           <a className="btn btn-ghost text-xl">Tradeswift dashboard</a>
       
    <Link href={'/userdashboard/account'}>Account</Link>
  
- <a className="btn btn-ghost text-xl">Tradeswift dashboard</a>
+ 
 
 
 
  <Link href={'/'}>Home</Link>
  
-</div></div>
+</div>
             
-            <div className="px-3 py-3">{children}</div>
+            <div className="px-3 py-3 flex-1">{children}</div>
         </div>
     );
 };
