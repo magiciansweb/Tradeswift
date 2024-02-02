@@ -6,7 +6,7 @@ const layout = ({children}) => {
     return (
         <div className="flex flex-col lg:flex-row container mx-auto">
             
-  <div className=" flex-1 flex-col">
+  <div className="block">
    
       
       <Link href={'/userdashboard/account'}>Account</Link>
@@ -19,7 +19,7 @@ const layout = ({children}) => {
     
   </div>
          
-            <div className=" px-3 py-3">{children}</div>
+            <div className="flex-1 max-w-4xl px-3 py-3">{children}</div>
         </div>
     );
 };
