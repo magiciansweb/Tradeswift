@@ -4,18 +4,19 @@ import Link from "next/link";
 
 const layout = ({children}) => {
     return (
-        <div className="flex flex-col gap-10 lg:flex-row container mx-auto">
+        <div className="flex flex-col my-10 gap-10 lg:flex-row container mx-auto">
             
   <div className="flex flex-col max-w-34">
    
       
-      <Link href={'/userdashboard/account'}>Account</Link>
+      <Link href={'/userdashboard/account'}><button className="btn btn-ghost text-xl">Account</button></Link>
     
     <a className="btn btn-ghost text-xl">Tradeswift dashboard</a>
  
   
   
-    <Link href={'/'}>Home</Link>
+    <Link href={'/'}><button className="btn btn-ghost text-xl">Home</button></Link>
+    <button className="btn btn-ghost text-xl">Sign out</button>
     
   </div>
          
