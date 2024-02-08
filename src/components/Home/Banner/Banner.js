@@ -6,7 +6,7 @@ import barnner from '@/assets/banner.png'
 const Banner = () => {
     return (
        <>
-         <div className="bg-[#664242] text-white">
+         <div className=" text-white">
             <div className="container mx-auto  flex items-center justify-between gap-8  flex-col-reverse md:flex-row">
                 <div className="space-y-3">
                     <h1 className=" text-3xl md:text-5xl lg:text-6xl font-bold">Invest Your Money <br /> With <span className="text-[#00D094]">Higher Return</span></h1>

@@ -201,7 +201,8 @@ const Blogs = () => {
   ];
   return (
    <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-      {blogData.map(blog=><div className="bg-[#1B2D29] space-y-3 text-white p-5 rounded-md" key={blog.id}>
+      {
+      blogData.map(blog=><div className="bg-[#1B2D29] space-y-3 text-white p-5 rounded-md" key={blog.id}>
           <div className="w-full h-[190px] mb-3 rounded-md" style={{backgroundImage:`url('${blog.image}')`,backgroundSize:'cover'}}></div>
           <p className="bg-[#0c1513] text-sm font-semibold text-[#00d094] py-1 px-2 rounded inline">{blog.tag}</p>
           <h1 className="text-2xl font-bold">{blog.title}</h1>

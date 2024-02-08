@@ -263,7 +263,7 @@ const AboutUs = () => {
 <Image src="https://i.ibb.co/wLcQ13t/warning-4201973.png" alt='icon' width={50} height={50} /> 
           </div>
             <div class="bg-white rounded-lg shadow-md p-6">
-                <p class="text-gray-600">The Financial Products offered by the company include Contracts for Difference ('CFDs') and other complex financial products. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage. As a result, CFDs may not be suitable for all investors because it is possible to lose all of your invested capital. You should never invest money that you cannot afford to lose. Before trading in the complex financial products offered, please ensure to understand the risks involved.</p>
+                <p class="text-gray-600">The Financial Products offered by the company include Contracts for Difference  and other complex financial products. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage. As a result, CFDs may not be suitable for all investors because it is possible to lose all of your invested capital. You should never invest money that you cannot afford to lose. Before trading in the complex financial products offered, please ensure to understand the risks involved.</p>
             </div>
         </div>
     </section>

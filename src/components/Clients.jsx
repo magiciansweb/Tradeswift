@@ -1,11 +1,11 @@
 import { PiCaretDoubleLeftBold } from "react-icons/pi";
 import Image from 'next/image';
 
-const clients = () => {
+const Clients = () => {
     return (
-       <div className=" bg-green-950 text-white">
+       <div className=" bg-[#083a2d] text-white">
         <div className="container mx-auto">
-        <div><h2 className="text-3xl py-10 text-center font-bold">Whats our clients say?</h2></div>
+        <div><h2 className="text-3xl py-10 text-center font-bold">Whats our Clients say?</h2></div>
          <div className="carousel w-full ">
   <div id="item1" className="carousel-item flex-col lg:flex-row items-center space-y-2 flex w-full gap-10">
   <div className="card h-[300px] w-[400px] rounded-none shadow-2xl p-4">
@@ -18,7 +18,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Senturk Yasar</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  width={50} height={50}/>
   </div>
  
 </div>
@@ -33,7 +33,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Shuvo</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  width={50} height={50}/>
     
   </div>
  
@@ -49,7 +49,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Jewel</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image" width={50} height={50} />
    
   </div>
  
@@ -69,7 +69,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Ahmed Bhramik</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  width={50} height={50}/>
    
   </div>
  
@@ -85,7 +85,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Ricci</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  width={50} height={50}/>
   </div>
  
 </div>
@@ -100,7 +100,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>MUMUCHU</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  width={50} height={50}/>
   </div>
  
 </div>
@@ -117,7 +117,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Senturk Yasar</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  width={50} height={50}/>
   </div>
  
 </div>
@@ -132,7 +132,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Shuvo</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image" width={50} height={50} />
   </div>
  
 </div>
@@ -147,7 +147,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Jewel</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image" width={50} height={50} />
   </div>
  
 </div>
@@ -164,7 +164,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Senturk Yasar</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  width={50} height={50}/>
   </div>
  
 </div>
@@ -179,7 +179,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Shuvo</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  width={50} height={50}/>
   </div>
  
 </div>
@@ -194,7 +194,7 @@ const clients = () => {
   <div className="avatar flex justify-between">
      <h2>Jewel</h2>
   <div className="w-15 rounded-full">
-  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image"  />
+  <Image src="https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png" alt="Description of the image" width={50} height={50} />
   </div>
  
 </div>
@@ -212,4 +212,4 @@ const clients = () => {
     );
 };
 
-export default clients;
+export default Clients;
