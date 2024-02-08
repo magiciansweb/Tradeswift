@@ -8,7 +8,6 @@ import { toast } from "react-hot-toast";
 
 const Navbar = () => {
   const {user,logout} = useContext(AuthContext);
-  console.log(user);
   const handleLogout = () => {
     logout()
     .then(()=>{
@@ -44,7 +43,7 @@ const Navbar = () => {
       </Link>
       <Link
         className="text-white mx-3 font-bold hover:underline"
-        href="/blog"
+        href="/blogs"
       >
         Blog
       </Link>

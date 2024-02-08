@@ -7,6 +7,7 @@ import Banner from "@/components/Home/Banner/Banner";
 import Whyinvest from "@/components/Whyinvest";
 import Clients from "@/components/clients";
 import React from "react";
+import Newslatter from "@/components/Home/Newslatter/Newslatter";
 
 
 const HomePage = () => {
