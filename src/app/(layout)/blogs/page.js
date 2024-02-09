@@ -1,7 +1,3 @@
-/**
- * The above code is a React component that renders a blog page with a header and a list of blogs.
- * @returns The BlogPage component is being returned.
- */
 import Blogs from '@/components/Blogs';
 import Link from 'next/link';
 

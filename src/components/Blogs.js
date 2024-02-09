@@ -1,8 +1,3 @@
-/**
- * The `Blogs` component is a React component that displays a slider of blog posts and a grid of blog
- * cards.
- * @returns The component `Blogs` is being returned.
- */
 "use client";
 import Image from "next/image";
 import Link from "next/link";
