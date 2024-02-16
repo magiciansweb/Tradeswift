@@ -7,18 +7,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
 import { toast } from "react-hot-toast";
-<<<<<<< HEAD
-
-const Navbar = () => {
-  const {user,logout} = useContext(AuthContext)
-  
-=======
 import UseAdmin from "../Hooks/UseAdmin";
+
 
 const Navbar = () => {
   const {logout} = useContext(AuthContext)
   const [userInfo] = UseAdmin();
->>>>>>> master
   // console.log(userInfo);
   const handleLogout = () => {
     logout()
@@ -97,17 +91,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-<<<<<<< HEAD
-        {user?<div className="dropdown dropdown-end">
-    <div tabIndex={0} role="button" className="btn m-1">Profile</div>
-    <ul className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-center">
-      <li>{user?.displayName}</li>
-=======
+
         {userInfo?<div className="dropdown dropdown-end">
     <div tabIndex={0} role="button" className="btn m-1">Profile</div>
     <ul className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-center">
       <li>{userInfo?.name}</li>
->>>>>>> master
       <li><Link href={'/userdashboard'} >Dashboard</Link></li>
       <li><button onClick={handleLogout}>LogOut</button></li>
     </ul>

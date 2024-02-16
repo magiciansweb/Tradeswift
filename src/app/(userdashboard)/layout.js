@@ -26,6 +26,12 @@ const layout = ({ children }) => {
                 </Link>
               </li>
               <li>
+                <Link href={"/userdashboard/profile"}>
+                  {" "}
+                  <FaPlaystation></FaPlaystation> Profile
+                </Link>
+              </li>
+              <li>
                 <Link href={"/userdashboard"}>
                   <FaHome></FaHome> Admin Home
                 </Link>
