@@ -12,7 +12,7 @@ const Deposit = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-      axios.post('http://localhost:5000/paymentsystem',data)
+      axios.post('/paymentsystem',data)
       .then(res=>{
         console.log(res.data.url);
         window.location.replace(res.data.url);

@@ -1,3 +1,4 @@
+"use client"
 import UseAdmin from "@/components/Hooks/UseAdmin";
 import Swal from "sweetalert2";
 
