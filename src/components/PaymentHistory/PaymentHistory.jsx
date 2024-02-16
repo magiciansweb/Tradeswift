@@ -23,7 +23,7 @@ const PaymentHistory = () => {
       {history === [] ? (
         <div className="flex justify-center items-center h-[calc(100vh-67px)] flex-col gap-2">
           <h1 className="text-3xl font-semibold">No Payment History</h1>
-          <p>It's look like you are not transection any time!</p>
+          <p>Its look like you are not transection any time!</p>
         </div>
       ) : (
         <div className="overflow-x-auto text-white">
