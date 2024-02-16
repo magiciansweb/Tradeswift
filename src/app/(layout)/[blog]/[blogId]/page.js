@@ -3,14 +3,18 @@ import { FaTwitter, FaFacebookF, FaLinkedinIn, FaLink } from "react-icons/fa";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import UseAxios from "@/components/Hooks/UseAxios";
 // 
 const BlogDetailsPage = () => {
   const [blogData, setBlogData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const {blogId} = useParams();
+  const axios = UseAxios()
+
+
+
    useEffect(() => {
-     fetch(`https://tradeswift-server.vercel.app/blogs/${blogId}`)
-       .then((res) => res.json())
+     axios(`/blogs/${blogId}`)
        .then((data) => {
         setBlogData(data)
         setIsLoading(false);

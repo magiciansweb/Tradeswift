@@ -1,7 +1,7 @@
 
 
-const DetailsPage = () => {
-    // console.log(params);
+const DetailsPage = ({params}) => {
+    console.log(params);
     return (
         <div>
             <h2> Tournament details page </h2>
