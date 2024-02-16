@@ -34,11 +34,6 @@ const SingUpPage = () => {
       balance: 0,
       withdraw: 0
     }
-<<<<<<< HEAD
-
-=======
-console.log(userInfo);
->>>>>>> master
     signup(email,password)
     .then(()=>{
         toast.success("Sign Up sucessfully");
