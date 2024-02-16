@@ -19,7 +19,7 @@ const BlogsComponent = () => {
         setBlogData(data)
         setIsLoading(false);
       });
-   }, [blogId]);
+   }, [blogId,axios]);
 
      if (isLoading) {
        return (

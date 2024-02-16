@@ -11,7 +11,7 @@ const Alltransaction = () => {
   const axios = UseAxios();
   useEffect(() => {
     axios.get(`/payment?currentPage=${currentPage}&query=${query}`).then((res) => setTransaction(res.data));
-  }, [currentPage,query]);
+  }, [currentPage,query,axios]);
 
   useEffect(() => {
     axios.get("/paymentCount").then((res) => setPageCount(res.data.count));

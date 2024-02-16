@@ -14,7 +14,7 @@ const PaymentHistory = () => {
     axios
       .get(`/paymenthistory?email=${user?.email}`)
       .then((res) => setHistort(res.data));
-  }, [user]);
+  }, [user,axios]);
 
   console.log(history);
 
