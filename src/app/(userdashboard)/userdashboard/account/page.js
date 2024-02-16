@@ -13,6 +13,10 @@ import countryList from "react-select-country-list";
 const page = () => {
 
   const [userInfo] = UseAdmin() ;
+<<<<<<< HEAD
+=======
+  console.log(userInfo.name);
+>>>>>>> master
   const country = countryList();
   const axios = UseAxios()
 
@@ -20,10 +24,21 @@ const page = () => {
     event.preventDefault()
     const form = event.target
     const name = form.name.value; 
+<<<<<<< HEAD
     const birth = form.birth.value; 
     const country = form.country.value; 
     const address = form.address.value; 
     const body = {name,birth,country,address}
+=======
+    const photo=form.photo.value;
+    const aboutme=form.aboutme.value;
+    const birth = form.birth.value; 
+    const education=form.education.value;
+    const country = form.country.value; 
+    const address = form.address.value; 
+    const body = {name,birth,country,address,photo,education,aboutme}
+    console.log(body);
+>>>>>>> master
     axios.put(`/user/${userInfo.email}`,body)
     .then(()=>{
       toast.success('Your information update sucessfully')
@@ -36,7 +51,11 @@ const page = () => {
 
   return (
     <div className="text-white">
+<<<<<<< HEAD
       <h3 className="text-xl font-semibold">User Id : {userInfo?._id}</h3>
+=======
+      {/* <h3 className="text-xl font-semibold">User Id : {userInfo?._id}</h3> */}
+>>>>>>> master
       <form onSubmit={handleUpdate} className="max-w-md mt-7">
         <div>
           <h5 className="text-sm font-medium mb-1">User Name</h5>
@@ -58,6 +77,22 @@ const page = () => {
             className="w-full px-3 py-2 border border-gray-300 bg-[#0B1325]"
           />
         </div>
+<<<<<<< HEAD
+=======
+        
+        <div className="mt-3">
+          <h5 className="text-sm font-medium mb-1">User Image</h5>
+          <input
+            type="text"
+            defaultValue={userInfo.photo}
+            
+            name="photo"
+            placeholder="photo url"
+         
+            className="w-full px-3 py-2 border border-gray-300 bg-[#0B1325]"
+          />
+        </div>
+>>>>>>> master
         <div className="mt-3">
           <h5 className="text-sm font-medium mb-1">Date of birth</h5>
           <input
@@ -82,6 +117,33 @@ const page = () => {
             className="w-full px-3 py-2 border border-gray-300 bg-[#0B1325]"
           />
         </div>
+<<<<<<< HEAD
+=======
+        <div className="mt-3">
+          <h5 className="text-sm font-medium mb-1">Education</h5>
+          <input
+            type="text"
+            defaultValue={userInfo.education}
+            
+            name="education"
+            placeholder="education"
+         
+            className="w-full px-3 py-2 border border-gray-300 bg-[#0B1325]"
+          />
+        </div>
+        <div className="mt-3">
+          <h5 className="text-sm font-medium mb-1">About me</h5>
+          <input
+            type="text"
+            defaultValue={userInfo.aboutme}
+            
+            name="aboutme"
+            placeholder="aboutme"
+         
+            className="w-full px-3 py-2 border border-gray-300 bg-[#0B1325]"
+          />
+        </div>
+>>>>>>> master
         <input type="submit" value='Update' className="bg-[#026FD3] text-white w-full py-2 font-medium mt-3 cursor-pointer" />
       </form>
     </div>

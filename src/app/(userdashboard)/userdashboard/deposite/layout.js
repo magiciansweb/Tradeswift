@@ -10,8 +10,13 @@ const layout = ({children}) => {
              <div className=" w-full  bg-[#353A4D]">
                 <ul className="menu p-4 flex flex-row">
                   
+<<<<<<< HEAD
                     <li><Link href={'/userdashboard/deposite'}><FaPaypal></FaPaypal> Transection</Link></li>
                       <li ><Link href={'/userdashboard'} ><BiMoneyWithdraw></BiMoneyWithdraw> Withdraw</Link></li>
+=======
+                    <li><Link href={'/userdashboard/deposite'}><FaPaypal></FaPaypal> Deposit</Link></li>
+                      <li ><Link href={'/userdashboard/deposite'} ><BiMoneyWithdraw></BiMoneyWithdraw> Withdraw</Link></li>
+>>>>>>> master
                       <li><Link href={'/userdashboard/transection'}><FaMoneyBillTransfer></FaMoneyBillTransfer> Transection</Link></li>
                     
                     
