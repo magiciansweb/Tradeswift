@@ -1,25 +1,8 @@
-<<<<<<< HEAD
-
-
-const page = () => {
-    return (
-        <div>
-            <h2>payment successfull</h2>
-=======
 import UseAdmin from "@/components/Hooks/UseAdmin";
 import Swal from "sweetalert2";
 
-
-
-
-
-
-
-
-
 const paymentSuccess = () => {
     const [userInfo]=UseAdmin();
-//    console.log(params);
 Swal.fire({
     position: "top-end",
     icon: "success",
@@ -30,14 +13,8 @@ Swal.fire({
     return (
       <div className="flex flex-col gap-8 lg:flex-row">
        <h2>success is comming</h2>
-      
->>>>>>> master
         </div>
     );
 };
 
-<<<<<<< HEAD
-export default page;
-=======
 export default paymentSuccess;
->>>>>>> master
