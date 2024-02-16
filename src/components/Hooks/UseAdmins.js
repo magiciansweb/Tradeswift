@@ -1,4 +1,3 @@
-"use client";
 
 import UseAuth from "./UseAuth";
 import UseAxios from "./UseAxios";
