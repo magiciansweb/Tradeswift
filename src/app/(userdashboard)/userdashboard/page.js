@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PaiChart from "@/components/Chart/PaiChart";
 
-import { FaPlus } from "react-icons/fa6";
+
 
 import Transection from "@/components/Deposit/Transection";
 
