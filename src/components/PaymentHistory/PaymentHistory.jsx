@@ -9,6 +9,7 @@ const PaymentHistory = () => {
   const [history, setHistort] = useState([]);
   const { user } = UseAuth();
   const axios = UseAxios();
+  
 
   useEffect(() => {
     axios
@@ -20,12 +21,7 @@ const PaymentHistory = () => {
 
   return (
     <div className="text-white">
-      {history === [] ? (
-        <div className="flex justify-center items-center h-[calc(100vh-67px)] flex-col gap-2">
-          <h1 className="text-3xl font-semibold">No Payment History</h1>
-          <p>Its look like you are not transection any time!</p>
-        </div>
-      ) : (
+       { history  ?  (
         <div className="overflow-x-auto text-white">
           <table className="table table-pin-rows table-pin-cols">
             <thead className="text-lg text-white">
@@ -51,6 +47,11 @@ const PaymentHistory = () => {
               ))}
             </tbody>
           </table>
+        </div>
+      ) :(
+        <div className="flex justify-center items-center h-[calc(100vh-67px)] flex-col gap-2">
+          <h1 className="text-3xl font-semibold">No Payment History</h1>
+          <p>Its look like you are not transection any time!</p>
         </div>
       )}
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const FAQ = () => {
     return (
-        <div className='lg:max-w-[400px] w-full my-10'>
+        <div className=''>
             <h2 className='text-2xl font-bold text-center py-4'>FAQ:</h2>
            <div className="collapse collapse-arrow bg-base-200">
   <input type="radio" name="my-accordion-2" checked="checked" /> 

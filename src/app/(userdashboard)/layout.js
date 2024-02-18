@@ -72,12 +72,23 @@ const layout = ({ children }) => {
                   <FaPlaystation></FaPlaystation> All Transaction
                 </Link>
               </li>
+              <li>
+                <Link href={"/userdashboard/paymenthistory"}>
+                  {" "}
+                  <FaPlaystation></FaPlaystation> Historty
+                </Link>
+              </li>
             </>
           ) : (
             <>
               <li>
                 <Link href={"/"}>
                   <FaHome></FaHome> Home
+                </Link>
+              </li>
+              <li>
+                <Link href={"/userdashboard"}>
+                  <FaHome></FaHome> User Home
                 </Link>
               </li>
               <li>
@@ -89,7 +100,7 @@ const layout = ({ children }) => {
               <li>
                 <Link href={"/userdashboard/deposite"}>
                   {" "}
-                  <FaVoicemail></FaVoicemail> Transection
+                  <FaVoicemail></FaVoicemail> Transection by mobile banking or card
                 </Link>
               </li>
               <li>
@@ -101,12 +112,12 @@ const layout = ({ children }) => {
               <li>
                 <Link href={"/userdashboard/paymenthistory"}>
                   {" "}
-                  <FaPlaystation></FaPlaystation> Histort
+                  <FaPlaystation></FaPlaystation> Historty
                 </Link>
               </li>
 
               <li>
-                <Link href={"/userdashboard"}>
+                <Link href={"/userdashboard/profile"}>
                   {" "}
                   <FaPlaystation></FaPlaystation> Profile
                 </Link>

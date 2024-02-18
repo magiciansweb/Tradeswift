@@ -1,4 +1,5 @@
 "use client"
+import Transection from "@/components/Deposit/Transection";
 import UseAdmin from "@/components/Hooks/UseAdmin";
 import Swal from "sweetalert2";
 
@@ -13,7 +14,7 @@ Swal.fire({
   });
     return (
       <div className="flex flex-col gap-8 lg:flex-row">
-       <h2>success is comming</h2>
+       <Transection></Transection>
         </div>
     );
 };
