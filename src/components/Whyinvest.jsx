@@ -4,7 +4,7 @@ import { BiMoneyWithdraw } from "react-icons/bi";
 import { BsChatRightText } from "react-icons/bs";
 const Whyinvest = () => {
     return (
-        <div className=" bg-[#083a2d]">
+        <div className=" bg-gray-900 text-white">
             <div className="container text-white mx-auto">
             <h2 className="text-3xl text-center font-bold py-10">Why invest with TradeSwift?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">

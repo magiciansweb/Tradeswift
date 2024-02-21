@@ -1,6 +1,4 @@
 import Image from "next/image";
-
-
 const loading = () => {
     return (
         <div className="flex justify-center items-center min-h-screen px-4">

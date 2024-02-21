@@ -1,30 +1,52 @@
+"use client"
+import UseAdmin from "@/components/Hooks/UseAdmin";
 import Link from "next/link";
-import { FaTrophy } from "react-icons/fa";
+
+
+
+import { FaHome, FaTradeFederation } from "react-icons/fa";
+import { FaAccusoft,  FaPlaystation,  FaUsers, FaVoicemail } from "react-icons/fa6";
 
 
 
 const layout = ({children}) => {
+    const [userInfo] = UseAdmin()
+   
     return (
-        <div className="flex flex-col my-10 gap-10 lg:flex-row container mx-auto">
-            
-  <div className="flex flex-col max-w-34 bg-base-300">
-   
-  <a className="btn btn-ghost text-xl">Tradeswift dashboard</a>
-      <Link href={'/userdashboard/account'}><button className="btn btn-ghost text-xl">Account</button></Link>
-
-      <Link href={'/userdashboard/tournaments'}>  <button className="btn btn-ghost text-xl">  Tournaments <FaTrophy></FaTrophy> </button> </Link>
-    
-   
- 
-  
-  
-    <Link href={'/'}><button className="btn btn-ghost text-xl">Home</button></Link>
-    <button className="btn btn-ghost text-xl">Sign out</button>
-    
-  </div>
-         
-            <div className="flex-1 max-w-4xl px-3 py-3">{children}</div>
-        </div>
+  <div className="flex flex-col lg:flex-row">
+            <div className=" lg:w-56 w-full lg:min-h-screen  bg-[#353A4D]">
+                <ul className="menu p-4">
+                  {
+                    userInfo.role === 'admin' ? <>
+                    <li><Link href={'/'}><FaHome></FaHome> Home</Link></li>
+                      <li ><Link href={'/userdashboard'} ><FaHome></FaHome> Admin Home</Link></li>
+                      <li><Link href={'/userdashboard/alltrade'}><FaTradeFederation></FaTradeFederation> All trade</Link></li>
+                    <div className="divider"></div>
+                    
+                    <li ><Link href={'/userdashboard/account'} > <FaAccusoft></FaAccusoft> Account Update</Link></li>
+                    <li ><Link href={'/userdashboard/deposite'} > <FaVoicemail></FaVoicemail> Transection</Link></li>
+                    <li><Link href={'/userdashboard/UsersCollect'}><FaUsers></FaUsers>  Allusers</Link></li>
+                    <li ><Link href={'/userdashboard/tournaments'} > <FaPlaystation></FaPlaystation> Tournaments</Link></li>
+                    </>:
+                    <>
+                    <li ><Link href={'/'} ><FaHome></FaHome>  Home</Link></li>
+                    <li><Link href={'/userdashboard/UsersCollect'}><FaUsers></FaUsers>  Allusers</Link></li>
+                    <li ><Link href={'/userdashboard/account'} > <FaAccusoft></FaAccusoft>Update Account </Link></li>
+                    <li ><Link href={'/userdashboard/deposite'} > <FaVoicemail></FaVoicemail> Transection</Link></li>
+                    <li ><Link href={'/userdashboard/tournaments'} > <FaPlaystation></FaPlaystation> Tournaments</Link></li>
+                    
+                    <li ><Link href={'/userdashboard'} > <FaPlaystation></FaPlaystation> Profile</Link></li>
+                    
+                    </>
+                  
+}
+                  
+                </ul>
+            </div>
+            <div className="flex-1 p-8">
+            {children}
+            </div>
+ </div>
     );
 };
 

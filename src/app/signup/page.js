@@ -9,16 +9,17 @@ import { AuthContext } from '@/Provider/AuthProvider';
 import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import useAxios from '@/Hooks/useAxios';
+
 import auth from '@/Provider/firebase.config';
+import UseAxios from '@/components/Hooks/UseAxios';
+
 
 
 const SingUpPage = () => {
   const {signup} = useContext(AuthContext);
   const router = useRouter()
   const provider = new GoogleAuthProvider();
-  const axios = useAxios()
-
+ const axios=UseAxios();
   const handleSignup = event => {
     event.preventDefault()
     const form = event.target;
@@ -29,7 +30,9 @@ const SingUpPage = () => {
     const userInfo = {
       name:name,
       email,email,
-      role:'user'
+      role:'user',
+      balance: 0,
+      withdraw: 0
     }
 
     signup(email,password)
@@ -39,6 +42,20 @@ const SingUpPage = () => {
         .then(()=>{
           router.push('/')
         })
+      //   fetch('https://tradeswift-server.vercel.app/user', userInfo,{
+        
+      //   method:"POST",
+      //   headers:{
+      //     'content-type':'application/json'},
+      //   body:JSON.stringify(data)
+      // })
+      // .then(res=>res.json())
+      // // .then( response=>response.json())
+      // .then(result=>{
+      //   console.log(result)
+      //   router.push('/')
+        
+      // })
     })
     .catch(err=>{
       toast.error(err.message)
@@ -46,13 +63,19 @@ const SingUpPage = () => {
   }
   const handleGoogle=()=>{
     signInWithPopup(auth,provider)
-   .then(res=>{console.log(res.user);
-    const userInfo=res.user
-    toast.success("Sign Up sucessfully");
+   .then(result=>{console.log(result.user);
+    const userInfo={
+      email:result.user?.email,
+      name:result.user?.displayName,
+      role:'user',
+      balance: 0,
+      withdraw: 0
+  }
+  toast.success("Sign Up sucessfully");
     axios.post('/user',userInfo)
     .then(()=>{
       router.push('/')
-    })
+    }) 
    })
    .catch(err=>console.log(err.messages))
  }

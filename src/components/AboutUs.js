@@ -220,7 +220,11 @@ const AboutUs = () => {
 
 <Image src="https://i.ibb.co/c12YGNW/support-2268705.png" alt="icon" width={50} height={50} />
             </div>
-            <p class="text-lg text-gray-300 mb-6">We're here to help you with any questions or concerns you may have. Contact our support team for assistance.</p>
+
+            <p class="text-lg text-gray-300 mb-6">We re here to help you with any questions or concerns you may have. Contact our support team for assistance.</p>
+
+            <p class="text-lg text-gray-300 mb-6">We are here to help you with any questions or concerns you may have. Contact our support team for assistance.</p>
+
             <div class="flex items-center justify-center">
                <Link href="/contact">  <button class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-full shadow-md">Contact Us</button> </Link>
             </div>

@@ -2,7 +2,6 @@
 
 
 
-import UseAdmins from "@/Hooks/UseAdmins";
 import { AuthContext } from "@/Provider/AuthProvider";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,9 +9,9 @@ import { useContext } from "react";
 import { toast } from "react-hot-toast";
 
 const Navbar = () => {
-  const {user,logout} = useContext(AuthContext);
-  const [userInfo] = UseAdmins()
-  console.log(userInfo);
+  const {user,logout} = useContext(AuthContext)
+  
+  // console.log(userInfo);
   const handleLogout = () => {
     logout()
     .then(()=>{
@@ -36,7 +35,7 @@ const Navbar = () => {
       </Link>
       <Link
         className="text-white mx-3 font-bold hover:underline"
-        href="/blog"
+        href="/blogs"
       >
         Blog
       </Link>
@@ -47,25 +46,7 @@ const Navbar = () => {
       >
         Contact
       </Link>
-     
-       <button onClick={handleLogout}>Signout</button> 
       
-      {
-        userInfo.role === "admin" && <Link
-        className="text-white mx-3 font-bold hover:underline"
-        href="/dashboard"
-      >
-        Dashboard
-      </Link>
-      }
-      {
-        userInfo.role === "user" && <Link
-        className="text-white mx-3 font-bold hover:underline"
-        href="/userdashboard"
-      >
-        Dashboard
-      </Link>
-      }
     </>
   );
 
@@ -108,9 +89,14 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-        {user === null ?  <Link href='signin' >
-          <button className="bg-[#00D094] text-black font-semibold px-5 py-3 rounded-md">Join Now</button>
-        </Link> : <Link  href="/userdashboard"><button  className="bg-[#00D094] text-black font-semibold px-5 py-3 rounded-md">Dashboard</button></Link>}
+        {user?<div className="dropdown dropdown-end">
+    <div tabIndex={0} role="button" className="btn m-1">Profile</div>
+    <ul className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-center">
+      <li>{user?.displayName}</li>
+      <li><Link href={'/userdashboard'} >Dashboard</Link></li>
+      <li><button onClick={handleLogout}>LogOut</button></li>
+    </ul>
+  </div>:  <li><Link  href={'/signin'} >Join us</Link></li>}
         </div>
       </div>
     </div>

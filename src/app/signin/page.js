@@ -35,7 +35,13 @@ const SinginPage = () => {
 const handleGoogle=()=>{
    signInWithPopup(auth,provider)
   .then(res=>{console.log(res.user);
-    const userInfo=res.user;
+    const userInfo={
+      email:result.user?.email,
+      name:result.user?.displayName,
+      role:'user',
+      balance: 0,
+      withdraw: 0
+  }
     toast.success("Sign Up sucessfully");
         axios.post('/user',userInfo)
         .then(()=>{

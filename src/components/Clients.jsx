@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Clients = () => {
     return (
-       <div className=" bg-[#083a2d] text-white">
+       <div className=" bg-gray-900 text-white">
         <div className="container mx-auto">
         <div><h2 className="text-3xl py-10 text-center font-bold">Whats our Clients say?</h2></div>
          <div className="carousel w-full ">

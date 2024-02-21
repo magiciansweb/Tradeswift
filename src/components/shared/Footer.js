@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
   const currentYear = new Date().getFullYear()
   return (
-    <div className="bg-[#00150F] text-[#969F9C]">
+    <div className="bg-gray-900  text-[#969F9C]">
       <div className="container mx-auto px-4">
         <div className="py-16 flex gap-8 flex-col md:flex-row">
           <div className="flex-1">
