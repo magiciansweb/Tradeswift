@@ -4,14 +4,14 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import UseAxios from "@/components/Hooks/UseAxios";
-// 
+
 const BlogsComponent = () => {
   const [blogData, setBlogData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const {blogId} = useParams();
   const axios = UseAxios()
 
-
+  const blogDetailsData = blogData.data;
 
    useEffect(() => {
      axios(`/blogs/${blogId}`)
@@ -38,31 +38,33 @@ const BlogsComponent = () => {
     <div className="max-w-screen-2xl p-4 mx-auto relative">
       <div className="flex">
         <div className="flex-1">
-          <h1 className="text-2xl md:text-5xl lg:text-6xl text-white">{blogData.title}</h1>
+          <h1 className="text-2xl md:text-5xl lg:text-6xl text-white">
+            {blogDetailsData.title}
+          </h1>
           <Image
             className="my-10 w-[300px] h-[200px] md:w-[550px] md:h-[350px] lg:w-[900px] lg:h-[650px]"
-            src={blogData?.image}
+            src={blogDetailsData?.image}
             width={400}
             height={300}
-            alt='blog image'
+            alt="blog image"
           />
-          <p className="my-4 text-2xl text-white">Category: {blogData.tag}</p>
+          <p className="my-4 text-2xl text-white">Category: {blogDetailsData.tag}</p>
           <p className="text-xl text-gray-300 leading-relaxed">
-            {blogData.description}
+            {blogDetailsData.description}
           </p>
           <div className="flex items-center gap-3 mt-10">
             <Image
               className="rounded-full"
-              src={blogData?.author?.image}
+              src={blogDetailsData?.author?.image}
               width={50}
               height={50}
-              alt={blogData?.author?.name}
+              alt={blogDetailsData?.author?.name}
             />
             <div>
               <h5 className="md:text-xl text-base font-semibold">
-                {blogData?.author?.name}
+                {blogDetailsData?.author?.name}
               </h5>
-              <p className="text-[#97ABA9]">{blogData?.author?.date}</p>
+              <p className="text-[#97ABA9]">{blogDetailsData?.author?.date}</p>
             </div>
           </div>
         </div>
@@ -86,6 +88,10 @@ const BlogsComponent = () => {
       </div>
     </div>
   );
+};
+
+export default BlogsComponent;
+
 };
 
 export default BlogsComponent;
