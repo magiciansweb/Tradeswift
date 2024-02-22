@@ -91,7 +91,3 @@ const BlogsComponent = () => {
 };
 
 export default BlogsComponent;
-
-};
-
-export default BlogsComponent;
