@@ -1,19 +1,13 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-
-
-
-
 import PaiChart from "@/components/Chart/PaiChart";
 
-import { FaPlus } from "react-icons/fa6";
+
 
 import Transection from "@/components/Deposit/Transection";
 
 const page = () => {
- 
-
   return (
     <div className="text-white flex flex-col">
       <div className="flex gap-y-4 space-x-9 mt-6 flex-col lg:flex-col">
@@ -36,7 +30,6 @@ const page = () => {
 
         </div>
       </div>
-     
     </div>
   );
 };

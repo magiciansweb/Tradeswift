@@ -34,7 +34,6 @@ const SingUpPage = () => {
       balance: 0,
       withdraw: 0
     }
-
     signup(email,password)
     .then(()=>{
         toast.success("Sign Up sucessfully");

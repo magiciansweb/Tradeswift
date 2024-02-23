@@ -7,10 +7,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
 import { toast } from "react-hot-toast";
+import UseAdmin from "../Hooks/UseAdmin";
+
 
 const Navbar = () => {
-  const {user,logout} = useContext(AuthContext)
-  
+  const {logout} = useContext(AuthContext)
+  const [userInfo] = UseAdmin();
   // console.log(userInfo);
   const handleLogout = () => {
     logout()
@@ -89,10 +91,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-        {user?<div className="dropdown dropdown-end">
+
+        {userInfo?<div className="dropdown dropdown-end">
     <div tabIndex={0} role="button" className="btn m-1">Profile</div>
     <ul className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-center">
-      <li>{user?.displayName}</li>
+      <li>{userInfo?.name}</li>
       <li><Link href={'/userdashboard'} >Dashboard</Link></li>
       <li><button onClick={handleLogout}>LogOut</button></li>
     </ul>
