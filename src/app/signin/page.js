@@ -8,16 +8,16 @@ import { useContext } from 'react';
 import { AuthContext } from '@/Provider/AuthProvider';
 import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import auth from '@/Provider/firebase.config';
-import axios from 'axios';
+
+
 
 
 // change
 const SinginPage = () => {
-  const {signin} = useContext(AuthContext)
+  const {signin} = useContext(AuthContext);
+  
   const router = useRouter()
-  const provider = new GoogleAuthProvider();
+  
   const handleSignin = event => {
     event.preventDefault()
     const form = event.target;
@@ -32,24 +32,7 @@ const SinginPage = () => {
       toast.error(err.message)
     })
   }
-const handleGoogle=()=>{
-   signInWithPopup(auth,provider)
-  .then(res=>{console.log(res.user);
-    const userInfo={
-      email:result.user?.email,
-      name:result.user?.displayName,
-      role:'user',
-      balance: 0,
-      withdraw: 0
-  }
-    toast.success("Sign Up sucessfully");
-        axios.post('/user',userInfo)
-        .then(()=>{
-          router.push('/')
-        })
-  })
-  .catch(err=>console.log(err.messages))
-}
+
     return (
         <div className="container mx-auto text-white px-5 my-7 min-h-[calc(100vh-56px)] flex items-center justify-center lg:flex-row flex-col gap-8">
         <div className="">

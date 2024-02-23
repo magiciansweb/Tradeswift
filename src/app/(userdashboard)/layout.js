@@ -37,11 +37,7 @@ const layout = ({ children }) => {
                   <FaHome></FaHome> Admin Home
                 </Link>
               </li>
-              <li>
-                <Link href={"/userdashboard/alltrade"}>
-                  <FaTradeFederation></FaTradeFederation> All trade
-                </Link>
-              </li>
+              
               <div className="divider"></div>
 
               <li>
@@ -53,7 +49,7 @@ const layout = ({ children }) => {
               <li>
                 <Link href={"/userdashboard/deposite"}>
                   {" "}
-                  <FaVoicemail></FaVoicemail> Transection
+                  <FaVoicemail></FaVoicemail> Transection with anyOperator
                 </Link>
               </li>
               <li>
@@ -107,8 +103,7 @@ const layout = ({ children }) => {
               <li>
                 <Link href={"/userdashboard/deposite"}>
                   {" "}
-                  <FaVoicemail></FaVoicemail> Transection by mobile banking or
-                  card
+                  <FaVoicemail></FaVoicemail> Transection with anyOperator
                 </Link>
               </li>
               <li>

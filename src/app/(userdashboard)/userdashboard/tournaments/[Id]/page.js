@@ -77,51 +77,7 @@ const Page = ({params}) => {
      
 
 
-{/* <div  className="card shadow-xl image-full">
 
-
-  <figure>
-    <Image
-      src="https://i.ibb.co/bBLXjNK/bar-chart-1060710.png"
-      alt="icon"
-      width={400}
-      height={300}
-    />
-  </figure>
-  <div className="card-body">
-    <div className="flex gap-2">
-      <IoMdStopwatch className="text-white font-extrabold text-2xl" />
-      <span className="card-title text-sm font-bold text-white bg-pink-800 p-1 rounded-lg">
-        {" "}
-        {tournament?.start_date}{" "}
-      </span>
-    </div>
-    <p className="mt-10 text-white text-center text-2xl">
-      <span className="bg-pink-800 p-1 rounded-lg">
-        {" "}
-        {tournament?.title}{" "}
-      </span>{" "}
-    </p>
-    <div className="text-green-700 text-center rounded-full bg-slate-200 font-extrabold my-5 space-y-3 text-lg">
-      <p> Prize pool </p>
-      <p> {tournament?.prize_money} </p>
-    </div>
-    <div className="flex w-full text-white font-extrabold bg-slate-800">
-      <div className="grid h-20 flex-grow card rounded-box place-items-center">
-        <span className="text-lg "> {tournament?.entry_fee} </span>
-        <span> Entry Fee </span>
-      </div>
-      <div className="divider divider-horizontal"></div>
-      <div className="grid h-20 flex-grow card  rounded-box place-items-center">
-        <span className="text-lg "> {tournament?.duration} </span>
-        <span> Duration </span>
-      </div>
-    </div>
-
-
-   
-  </div>
-</div> */}
 
 <div className="card w-96 bg-gray-300 text-primary-content">
   <div className="card-body">
@@ -146,20 +102,7 @@ const Page = ({params}) => {
 
       {/* Open the modal using document.getElementById('ID').showModal() method */}
 
-{/* <button className="btn  btn-success  mb-5 mt-5" onClick={()=>document.getElementById('my_modal_5').showModal()}>join now /-- 10$</button>
 
-<dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-  <div className="modal-box">
-    <h3 className="font-bold text-lg">Hello!</h3>
-    <p className="py-4">Press ESC key or click the button below to close</p>
-    <div className="modal-action">
-      <form method="dialog">
-      
-        <button className="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog> */}
 
 
 {tournament.start_date !== "finished" &&
@@ -205,7 +148,7 @@ const Page = ({params}) => {
 
   <h2 className="text-red-400 p-2 m-2 text-center mt-5 text-lg"> You need to deposit $10 </h2>
 
-  <Link href='/userdashboard'> <button className="btn btn-outline  btn-wide mx-auto m-5  btn-accent text-lg"> <FaPlus className="text-lg" /> Deposit </button> </Link>
+  <Link href='/userdashboard/deposite'> <button className="btn btn-outline  btn-wide mx-auto m-5  btn-accent text-lg"> <FaPlus className="text-lg" /> Deposit </button> </Link>
 
 
 
