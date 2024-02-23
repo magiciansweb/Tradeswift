@@ -22,7 +22,7 @@ const AboutUs = () => {
 
           
                   <div className="text-center  px-4 py-8 md:py-12 lg:py-16"> 
-    <h2 className="text-4xl font-bold text-black mb-4 md:text-5xl lg:text-6xl"> Accounts <span className="text-green-400"> Registered </span> </h2>
+    <h2 className="text-4xl font-bold  mb-4 md:text-5xl lg:text-6xl"> Accounts <span className="text-green-400"> Registered </span> </h2>
     <p className="mt-3 text-xl  md:text-2xl lg:text-3xl">
         The number of active users is growing rapidly from year to year
     </p>
@@ -31,7 +31,7 @@ const AboutUs = () => {
         {/* Stat Card 1 */}
         <div className=" rounded-lg shadow-md p-6 flex flex-col items-center">
           
-            <Image className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full mb-4" src="https://i.ibb.co/ZdR2PYc/user-8647311.png" alt="icon" width={100} height={100} />
+            <Image className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full mb-4 text-white" src="https://i.ibb.co/ZdR2PYc/user-8647311.png" alt="icon" width={100} height={100} />
 
             <span className="text-lg font-semibold ">5k</span>
             <p className="">Registered users (2014)</p>
@@ -41,7 +41,7 @@ const AboutUs = () => {
         <div className=" rounded-lg shadow-md p-6 flex flex-col items-center">
 
             
-            <Image className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full mb-4" src="https://i.ibb.co/bHPX5rD/people-1769041.png" alt=""  width={100} height={100} />
+            <Image className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full mb-4 text-white" src="https://i.ibb.co/bHPX5rD/people-1769041.png" alt=""  width={100} height={100} />
             <span className="text-lg font-semibold ">15k</span>
             <p className="">Registered users (2018)</p>
         </div>
@@ -49,7 +49,7 @@ const AboutUs = () => {
         {/* Stat Card 3 */}
         <div className=" rounded-lg shadow-md p-6 flex flex-col items-center">
          
-            <Image className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full mb-4"  src="https://i.ibb.co/xGkMBdR/people-3369137.png" alt="" width={100} height={100} />
+            <Image className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full mb-4 text-white"  src="https://i.ibb.co/xGkMBdR/people-3369137.png" alt="" width={100} height={100} />
             <span className="text-lg font-semibold ">40k</span>
             <p className="">Registered users (2023)</p>
         </div>

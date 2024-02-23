@@ -41,20 +41,7 @@ const SingUpPage = () => {
         .then(()=>{
           router.push('/')
         })
-      //   fetch('https://tradeswift-server.vercel.app/user', userInfo,{
-        
-      //   method:"POST",
-      //   headers:{
-      //     'content-type':'application/json'},
-      //   body:JSON.stringify(data)
-      // })
-      // .then(res=>res.json())
-      // // .then( response=>response.json())
-      // .then(result=>{
-      //   console.log(result)
-      //   router.push('/')
-        
-      // })
+     
     })
     .catch(err=>{
       toast.error(err.message)
