@@ -26,7 +26,7 @@ const Page = ({params}) => {
 
     
 
-        fetch(`http://localhost:5000/tournament/details/${params.Id}`)
+        fetch(`https://tradeswift-server.vercel.app/tournament/details/${params.Id}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
