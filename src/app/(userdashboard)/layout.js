@@ -3,6 +3,7 @@ import UseAdmin from "@/components/Hooks/UseAdmin";
 import Link from "next/link";
 
 import { FaHome, FaTradeFederation } from "react-icons/fa";
+import { FcNeutralTrading } from "react-icons/fc";
 import {
   FaAccusoft,
   FaPlaystation,
@@ -61,6 +62,12 @@ const layout = ({ children }) => {
                 </Link>
               </li>
               <li>
+                <Link href={"/userdashboard/SocialTrading"}>
+                  {" "}
+                  <FcNeutralTrading /> Social Trading
+                </Link>
+              </li>
+              <li>
                 <Link href={"/userdashboard/tournaments"}>
                   {" "}
                   <FaPlaystation></FaPlaystation> Tournaments
@@ -100,7 +107,14 @@ const layout = ({ children }) => {
               <li>
                 <Link href={"/userdashboard/deposite"}>
                   {" "}
-                  <FaVoicemail></FaVoicemail> Transection by mobile banking or card
+                  <FaVoicemail></FaVoicemail> Transection by mobile banking or
+                  card
+                </Link>
+              </li>
+              <li>
+                <Link href={"/userdashboard/SocialTrading"}>
+                  {" "}
+                  <FcNeutralTrading /> Social Trading
                 </Link>
               </li>
               <li>
