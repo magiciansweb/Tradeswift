@@ -17,7 +17,7 @@ import { MdDetails } from "react-icons/md";
 
   useEffect(() => {
     async function fetchTournaments() {
-      const response = await fetch("http://localhost:5000/tournament");
+      const response = await fetch("https://tradeswift-server.vercel.app/tournament");
       const data = await response.json();
       setTournaments(data);
     }
