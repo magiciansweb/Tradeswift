@@ -1,7 +1,6 @@
 "use client"
 
 import Link from 'next/link';
-import {FcGoogle} from 'react-icons/fc'
 import banner from '@/assets/5035121.jpg'
 import Image from 'next/image';
 import { useContext } from 'react';
@@ -72,8 +71,8 @@ const SinginPage = () => {
               className="w-full py-3 rounded bg-[#00d068] font-medium mt-5 text-black cursor-pointer text-lg"
             />
           </form>
-          <p className="my-2 text-center font-medium">or</p>
-          <button onClick={handleGoogle} className='w-full bg-[f5f7fc] py-3 rounded-md border-2 flex items-center justify-center gap-2 font-medium text-lg border-black'><span className='text-2xl'><FcGoogle/></span><span>Continue with Google</span></button>
+          
+          
           <p className="font-bold mt-1">
             Dont have any Account?
             <Link href="/signup" className="text-blue-600">
