@@ -2,7 +2,7 @@ import AboutUs from "@/components/AboutUs";
 import Link from "next/link";
 
 
-const AboutPage = () => {
+const AboutPage = () => {  
     return (
         <div className="mt-5">
      <div className="min-h-screen">
