@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import FAQ from "./Transection/FAQ";
-;
+
 
 const AboutUs = () => {
 

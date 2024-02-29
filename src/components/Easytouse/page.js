@@ -5,11 +5,15 @@
  * page. It includes a heading, a paragraph, three feature sections with images and descriptions, and a
  * button.
  */
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { FaArrowRight } from 'react-icons/fa6';
+import UseAdmin from '../Hooks/UseAdmin';
 
 const Easytouse = () => {
+  const [userInfo]=UseAdmin();
   return (
     <div className="bg-[#161A25] min-h-screen pb-4">
       <h1 className="text-white text-5xl font-bold text-center pt-28">
@@ -68,11 +72,15 @@ const Easytouse = () => {
         </div>
       </div>
       <div className="flex justify-center items-center mx-auto mt-10">
-        <Link href={'/signup'}>
-          <button className="btn btn-wide text-white bg-[#FF5A3E] hover:bg-[#ff3e3ee7] border-none uppercase">
-            Get Started For Free
-          </button>
-        </Link>
+       {userInfo? <Link href={'/userdashboard'}><button className="bg-[#00d094] px-5 py-3 rounded-md font-medium text-black flex items-center gap-1">
+                   <span>Get Started</span>
+                   
+                    <span><FaArrowRight/></span>
+                </button></Link>:<Link href={'/signin'}><button className="bg-[#00d094] px-5 py-3 rounded-md font-medium text-black flex items-center gap-1">
+                   <span>Get Started</span>
+                   
+                    <span><FaArrowRight/></span>
+                </button></Link>}
       </div>
     </div>
   );
