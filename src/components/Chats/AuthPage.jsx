@@ -1,13 +1,15 @@
 "use client";
 
-import axios from "axios";
+import UseAxios from "../Hooks/UseAxios";
+
+
 
 const AuthPage = (props) => {
+  const axios=UseAxios();
   const onSubmit = (e) => {
     e.preventDefault();
     const { value } = e.target[0];
-    axios
-      .post("https://tradeswift.vercel.app/authenticate", { username: value })
+    axios.post("/authenticate", { username: value })
       .then((res) => props.onAuth({ ...res.data, secret: value }))
       .catch((e) => console.log("error", e));
   };
