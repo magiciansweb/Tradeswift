@@ -1,0 +1,30 @@
+
+.video-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+  }
+  
+  .close-button {
+    position: absolute;
+    top : 0px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 27px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .close-button:hover {
+    color: #ff0000; 
+  }
+  
