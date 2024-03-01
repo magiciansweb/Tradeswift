@@ -13,7 +13,7 @@ const AllTradeHistory = () => {
   useEffect(() => {
     axios.get(`/trade`).then((res) => setTrade(res.data));
   }, [user, axios,trade]);
-  // console.log(trade);
+  console.log(trade);
 
   const handelTrading = (event, trad) => {
     const status = event.target.value;
