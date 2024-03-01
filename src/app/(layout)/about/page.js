@@ -4,10 +4,10 @@ import Link from "next/link";
 
 const AboutPage = () => {  
     return (
-        <div className="mt-5">
+        <div className="">
      <div className="min-h-screen">
       <div className="h-80" style={{backgroundImage: "url(https://i.ibb.co/KVVxYts/sub-Banner.png)",backgroundRepeat:"no-repeat",backgroundSize:'cover',backgroundPosition:'center'}}>
-        <div className="container h-full flex flex-col gap-y-4 justify-center mx-auto px-4 text-white">
+        <div className="container h-full flex flex-col gap-y-4 justify-center mx-auto px-4">
           <h1 className="text-5xl font-bold"> About Us </h1>
           <p className="text-lg font-semibold"><Link className="text-[#00D094]" href='/'>Home</Link> / about</p>
         </div>

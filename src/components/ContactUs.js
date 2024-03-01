@@ -40,8 +40,8 @@ const ContactUs = () => {
   return (
     <div className="flex gap-8 flex-col lg:flex-row text-white my-16">
       <div className="w-full lg:w-1/3">
-        <h1 className="text-3xl font-bold">
-          Let’s <span className="text-[#00d094]">Get In Touch</span> <br /> With
+        <h1 className="text-3xl text-green-600 font-bold">
+          Let’s <span className="">Get In Touch</span> <br /> With
           Us
         </h1>
         <div className="mt-7 flex items-center gap-4">

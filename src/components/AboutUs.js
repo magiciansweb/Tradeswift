@@ -30,7 +30,7 @@ const AboutUs = () => {
      <Image src="https://i.ibb.co/09FCvd9/4156401.jpg" alt="icon" width={400} height={350}/>
     <div>
 
-    <h2 className="text-4xl font-bold text-center    mt-5 mb-5">Introduction to <span className="text-green-600 font-bold "> Tradeswift </span> </h2>
+    <h2 className="text-4xl font-bold text-center  text-green-600  mt-5 mb-5">Introduction to <span className="text-green-600 font-bold "> Tradeswift </span> </h2>
    <div className="">
    <p className="text-lg text-center ">
       Tradeswift is a cutting-edge online trading platform designed to provide traders with a seamless and intuitive trading experience. With advanced technology and a user-friendly interface, Tradeswift offers a wide range of financial instruments for trading, including stocks, forex, cryptocurrencies, and more.
@@ -47,10 +47,10 @@ const AboutUs = () => {
 {/* MISSION AND VISSION */}
 <div className="card mt-10  lg:card-side bg-base-100  shadow-xl">
   
-   <Image src="https://i.ibb.co/jMBKkZ8/20616.jpg" alt="icon" width={400} height={350}/>
+   <Image src="https://i.postimg.cc/yN0sQjqy/image.png" alt="icon" width={400} height={350}/>
   <div className="card-body">
 
-  <h2 className="text-3xl  font-bold text-center mb-4">Mission and Vision</h2>
+  <h2 className="text-3xl text-green-600  font-bold text-center mb-4">Mission and Vision</h2>
   <p className="text-lg  font-serif text-center mb-6">
       Our mission at Tradeswift is to democratize access to financial markets and empower individuals worldwide to achieve their financial goals through online trading. We envision a future where anyone, regardless of their background or experience, can participate in the global economy and build wealth with confidence.
     </p>
@@ -74,7 +74,7 @@ const AboutUs = () => {
                <div class="flex flex-col items-center rounded-lg shadow-md">
 
 
-                                       <Image src="https://i.ibb.co/4283W6D/8025287921598811056-128.png" alt="icon" width={50} height={50}/>
+                                       <Image src="https://i.postimg.cc/CM9Yg9Fs/image.png" alt="icon" width={50} height={50}/>
                    <h3 class="text-xl font-bold mt-3 "> Shahina Akter Shima </h3>
               
                </div>
@@ -111,7 +111,7 @@ const AboutUs = () => {
 <div className="card ">
  
   <div className="card-body">
-  <h2 className="text-3xl   font-bold text-center mb-4">Core Values</h2>
+  <h2 className="text-3xl text-green-600  font-bold text-center mb-4">Core Values!!!</h2>
   <ul className=" text-xl pl-6">
       <li className="text-lg mb-4">Transparency: We believe in openness and honesty in all our interactions and operations.</li>
       <li className="text-lg mb-4">Security: We prioritize the protection of our users funds and personal information through advanced security measures.</li>
@@ -130,7 +130,7 @@ const AboutUs = () => {
      <section class="py-12 mt-5  ">
          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex gap-5 mb-5 items-center"> 
-             <h2 class="text-3xl  font-extrabold mb-4">Client Support</h2>
+             <h2 class="text-3xl text-green-600 font-extrabold mb-4">Client Support</h2>
 
  <Image src="https://i.ibb.co/c12YGNW/support-2268705.png" alt="icon" width={50} height={50} />
             </div>

@@ -81,7 +81,7 @@ const Blogs = () => {
               key={sliderData._id}
               className="keen-slider__slide number-slide1 mb-6"
             >
-              <div className="flex justify-center md:gap-16 gap-6 bg-[#1D232A] cursor-pointer space-y-3 text-white p-5 rounded-md">
+              <div className="flex justify-center md:gap-16 gap-6 bg-[#1D232A] cursor-pointer space-y-3  p-5 rounded-md">
                 <div
                   className="h-[160px] w-[310px] md:h-[300px] md:w-[600px] mb-3 rounded-md"
                   style={{
@@ -93,7 +93,7 @@ const Blogs = () => {
                   <p className="bg-[#0c1513] md:text-base text-xs font-semibold text-[#00d094] py-1 px-2 rounded inline">
                     {sliderData.tag}
                   </p>
-                  <h1 className="md:text-6xl text-lg font-bold">
+                  <h1 className="md:text-6xl text-green-600 text-lg font-bold">
                     #{sliderData.title}
                   </h1>
                   <p className="text-[#97ABA9] hidden md:block text-justify">
@@ -131,7 +131,7 @@ const Blogs = () => {
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {getBlogData.map((blog) => (
           <Link href={`../${blog?.tag}/${blog._id}`} key={blog._id}>
-            <div className="bg-[#1D232A] hover:bg-[#2B3139] cursor-pointer space-y-3 text-white p-5 rounded-md">
+            <div className="bg-[#1D232A] hover:bg-[#2B3139] cursor-pointer space-y-3  p-5 rounded-md">
               <div
                 className="w-full h-[190px] mb-3 rounded-md"
                 style={{
@@ -142,8 +142,8 @@ const Blogs = () => {
               <p className="bg-[#0c1513] text-sm font-semibold text-[#00d094] py-1 px-2 rounded inline">
                 {blog.tag}
               </p>
-              <h1 className="text-2xl font-bold">{blog.title}</h1>
-              <p className="text-[#97ABA9] text-justify">
+              <h1 className="text-2xl text-green-600 font-bold">{blog.title}</h1>
+              <p className=" text-justify">
                 {blog.description.slice(0, 130)}...
               </p>
               <div className="flex items-center gap-3">
