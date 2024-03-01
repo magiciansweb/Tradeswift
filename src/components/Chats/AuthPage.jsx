@@ -7,9 +7,9 @@ const AuthPage = (props) => {
     e.preventDefault();
     const { value } = e.target[0];
     axios
-      .post("http://localhost:5000/authenticate", { username: value })
+      .post("https://tradeswift.vercel.app/authenticate", { username: value })
       .then((res) => props.onAuth({ ...res.data, secret: value }))
-      .catch(e => console.log('error', e))
+      .catch((e) => console.log("error", e));
   };
 
   return (

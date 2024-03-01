@@ -1,10 +1,4 @@
 "use client";
-import {
-  ChatEngine,
-  MultiChatSocket,
-  MultiChatWindow,
-  useMultiChatLogic,
-} from "react-chat-engine-advanced";
 import { PrettyChatWindow } from "react-chat-engine-pretty";
 const ChatsPage = (props) => {
   return (
