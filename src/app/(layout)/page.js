@@ -9,7 +9,7 @@ import Whyinvest from "@/components/Whyinvest";
 
 import React from "react";
 import Clients from "@/components/Clients";
-import Newslatter from "@/components/Home/Newslatter/Newslatter";
+
 
 
 const HomePage = () => {
@@ -22,7 +22,7 @@ const HomePage = () => {
    <Getstarted></Getstarted>
    <Easytouse></Easytouse>
 
-   <Foundation></Foundation>
+   
    
     <Footertop></Footertop>
   </div>;

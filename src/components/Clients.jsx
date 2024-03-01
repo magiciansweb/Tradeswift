@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const Clients = () => {
     return (
-       <div className=" bg-gray-900 text-white">
+       <div className=" bg-gray-900 ">
         <div className="container mx-auto">
-        <div><h2 className="text-3xl py-10 text-center font-bold">Whats our Clients say?</h2></div>
+        <div><h2 className="text-3xl py-10 text-green-600 text-center font-bold">Whats our Clients say?</h2></div>
          <div className="carousel w-full ">
   <div id="item1" className="carousel-item flex-col lg:flex-row items-center space-y-2 flex w-full gap-10">
   <div className="card h-[300px] w-[400px] rounded-none shadow-2xl p-4">

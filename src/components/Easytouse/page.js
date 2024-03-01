@@ -16,7 +16,7 @@ const Easytouse = () => {
   const [userInfo]=UseAdmin();
   return (
     <div className="bg-[#161A25] min-h-screen pb-4">
-      <h1 className="text-white text-5xl font-bold text-center pt-28">
+      <h1 className="text-green-600 text-5xl font-bold text-center pt-28">
         Powerful and easy-to-use features
       </h1>
       <p className="text-center text-gray-400 text-xl mt-4">
@@ -26,7 +26,7 @@ const Easytouse = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 max-w-screen-xl px-2 mx-auto">
         <div className="bg-[#22293D] h-[508px] rounded-lg cursor-pointer">
-          <p className="text-white text-lg text-center mt-8">
+          <p className=" text-lg text-center mt-8">
             Use smart Newsfeed to <br /> make informed decisions
           </p>
           <div className="flex justify-center mx-auto">
@@ -41,7 +41,7 @@ const Easytouse = () => {
           ></Image>
         </div>
         <div className="bg-[#22293D] h-[508px] rounded-lg cursor-pointer">
-          <p className="text-white text-lg text-center mt-8">
+          <p className=" text-lg text-center mt-8">
             Trade wisely by using a <br /> variety of Indicators
           </p>
           <div className="flex justify-center mx-auto">
@@ -56,7 +56,7 @@ const Easytouse = () => {
           ></Image>
         </div>
         <div className="bg-[#22293D] h-[508px] rounded-lg cursor-pointer">
-          <p className="text-white text-lg text-center mt-8">
+          <p className=" text-lg text-center mt-8">
             Harness the power of a <br /> supportive community
           </p>
           <div className="flex justify-center mx-auto">

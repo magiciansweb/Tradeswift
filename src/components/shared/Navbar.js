@@ -23,33 +23,33 @@ const Navbar = () => {
   const navItems = (
     <>
       <Link
-        className="  mx-3 font-bold hover:underline text-white"
+        className="  mx-3 font-bold hover:underline "
         href="/"
       >
         Home
       </Link>
 
       <Link
-        className="text-white mx-3 font-bold hover:underline"
+        className=" mx-3 font-bold hover:underline"
         href="/about"
       >
         About
       </Link>
       <Link
-        className="text-white mx-3 font-bold hover:underline"
+        className=" mx-3 font-bold hover:underline"
         href="/blogs"
       >
         Blog
       </Link>
 
       <Link
-        className="text-white mx-3 font-bold hover:underline"
+        className=" mx-3 font-bold hover:underline"
         href="/contact"
       >
         Contact
       </Link>
       <Link
-        className="text-white mx-3 font-bold hover:underline"
+        className=" mx-3 font-bold hover:underline"
         href="/chat"
       >
         Chat
