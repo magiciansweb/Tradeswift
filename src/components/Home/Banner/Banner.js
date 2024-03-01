@@ -13,13 +13,13 @@ const Banner = () => {
          <div className=" ">
             <div className="container mx-auto  flex items-center justify-between gap-8  flex-col-reverse md:flex-row">
                 <div className="space-y-3">
-                    <h1 className=" text-3xl md:text-5xl lg:text-6xl font-bold">Invest Your Money <br /> With <span className="text-[#00D094]">Higher Return</span></h1>
+                    <h1 className=" text-3xl md:text-5xl lg:text-6xl font-bold">Invest Your Money <br /> With <span className="text-green-600">Higher Return</span></h1>
                     <p className="max-w-lg text-sm md:text-base">Anyone can invest money to different currency to increase their earnings by the help of Bitrader through online.</p>
-               {userInfo? <Link href={'/userdashboard'}><button className="bg-[#00d094] px-5 py-3 rounded-md font-medium text-black flex items-center gap-1">
+               {userInfo? <Link href={'/userdashboard'}><button className="bg-green-600 px-5 py-3 rounded-md font-medium text-black flex items-center gap-1">
                    <span>Get Started</span>
                    
                     <span><FaArrowRight/></span>
-                </button></Link>:<Link href={'/signin'}><button className="bg-[#00d094] px-5 py-3 rounded-md font-medium text-black flex items-center gap-1">
+                </button></Link>:<Link href={'/signin'}><button className="bg-green-600 px-5 py-3 rounded-md font-medium text-black flex items-center gap-1">
                    <span>Get Started</span>
                    
                     <span><FaArrowRight/></span>

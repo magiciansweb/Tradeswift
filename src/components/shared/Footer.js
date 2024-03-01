@@ -15,13 +15,13 @@ const Footer = () => {
                 width={50}
                 height={50}
               />
-              <p className="text-4xl text-green-800 font-semibold "> TradeSwift </p>
+              <p className="text-4xl text-green-600 font-semibold "> TradeSwift </p>
             </div>
             <p className="mt-3 text-lg text-justify max-w-sm">Welcome to our trading site! We offer the best, most affordable products and services around. Shop now and start finding great deals!</p>
           </div>
           <div className="flex-1 grid grid-cols-2 md:grid-cols-3">
             <div>
-              <h3 className="text-2xl font-bold text-green-800">Quick Links</h3>
+              <h3 className="text-2xl font-bold text-green-600">Quick Links</h3>
               <ul className="mt-5 text-xl font-medium space-y-1">
                 <li className="cursor-pointer">About Us</li>
                 <li className="cursor-pointer">Teams</li>
@@ -30,7 +30,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-green-800">Support</h3>
+              <h3 className="text-2xl font-bold text-green-600">Support</h3>
               <ul className="mt-5 text-xl font-medium space-y-1">
                 <li className="cursor-pointer">Terms & Conditions</li>
                 <li className="cursor-pointer">Privacy Policy</li>
@@ -39,7 +39,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-green-800">Company</h3>
+              <h3 className="text-2xl font-bold text-green-600">Company</h3>
               <ul className="mt-5 text-xl font-medium space-y-1">
                 <li className="cursor-pointer">Careers</li>
                 <li className="cursor-pointer">Updates</li>

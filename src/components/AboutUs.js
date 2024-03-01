@@ -47,7 +47,7 @@ const AboutUs = () => {
 {/* MISSION AND VISSION */}
 <div className="card mt-10  lg:card-side bg-base-100  shadow-xl">
   
-   <Image src="https://i.postimg.cc/yN0sQjqy/image.png" alt="icon" width={400} height={350}/>
+   <Image src="https://i.postimg.cc/CM9Yg9Fs/image.png" alt="icon" width={450} height={350}/>
   <div className="card-body">
 
   <h2 className="text-3xl text-green-600  font-bold text-center mb-4">Mission and Vision</h2>
@@ -140,7 +140,7 @@ const AboutUs = () => {
              <p class="text-lg   mb-6">We are here to help you with any questions or concerns you may have. Contact our support team for assistance.</p>
 
            <div class="flex text-3xl items-center justify-center">
-               <Link href="/contact">  <button class=" bg-green-800 hover:bg-blue-700  font-bold py-2 px-4 rounded-full shadow-md">Contact Us</button> </Link>
+               <Link href="/contact">  <button class=" text-green-600 hover:bg-blue-700  font-bold py-2 px-4 rounded-full shadow-md">Contact Us</button> </Link>
             </div>
         </div>
     </section>

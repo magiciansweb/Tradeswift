@@ -16,7 +16,7 @@ const Foundation = () => {
 
 
  <div className="pt-10  pb-10 text-center ">
-  <h2 className=" font-bold text-4xl text-green-800 mb-4">Build Your Investing <span className='text-green-800 font-extrabold'> Foundation </span> </h2>
+  <h2 className=" font-bold text-4xl text-green-600 mb-4">Build Your Investing <span className='text-green-800 font-extrabold'> Foundation </span> </h2>
   <p className=" text-lg mb-6">
     We all have to start somewhere. Let us help you enhance your trading knowledge throughout your trading journey.
     <br />With our video tutorials section, you will be ready to start in no time.
