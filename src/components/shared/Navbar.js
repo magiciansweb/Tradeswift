@@ -48,6 +48,12 @@ const Navbar = () => {
       >
         Contact
       </Link>
+      <Link
+        className="text-white mx-3 font-bold hover:underline"
+        href="/chat"
+      >
+        Chat
+      </Link>
       
     </>
   );
