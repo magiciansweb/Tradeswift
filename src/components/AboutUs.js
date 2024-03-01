@@ -23,7 +23,7 @@ const AboutUs = () => {
 
 <div>
 
-<div className="hero max-h-[500px]  py-10 bg-base-200">
+<div className="hero max-h-[500px]  py-10">
 
   <div className="hero-content flex-col lg:flex-row-reverse">
   
