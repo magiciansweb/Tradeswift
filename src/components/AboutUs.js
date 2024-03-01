@@ -140,7 +140,7 @@ const AboutUs = () => {
              <p class="text-lg   mb-6">We are here to help you with any questions or concerns you may have. Contact our support team for assistance.</p>
 
            <div class="flex text-3xl items-center justify-center">
-               <Link href="/contact">  <button class=" text-green-600 hover:bg-blue-700  font-bold py-2 px-4 rounded-full shadow-md">Contact Us</button> </Link>
+               <Link href="/contact">  <button class=" bg-green-600 hover:bg-blue-700  font-bold py-2 px-4 rounded-full shadow-md">Contact Us</button> </Link>
             </div>
         </div>
     </section>
