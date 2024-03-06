@@ -3,6 +3,7 @@ import UseAdmin from "@/components/Hooks/UseAdmin";;
 import SideBar from "@/components/SideBar";
 
 const layout = ({ children }) => {
+  //responsive
   const [userInfo] = UseAdmin();
   return (
     <div className="flex flex-col lg:flex-row container">
